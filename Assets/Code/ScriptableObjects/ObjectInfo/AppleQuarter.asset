@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 855a1ffec072b49929295312f2e40f2a, type: 3}
+  m_Name: AppleQuarter
+  m_EditorClassIdentifier: Assembly-CSharp::Object_Info
+  soundTypeRotted: 0
+  soundTypeNotRotted: 1
+  immune: 0
+  maxHealth: 25
