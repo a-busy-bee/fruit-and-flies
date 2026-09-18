@@ -9,10 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 855a1ffec072b49929295312f2e40f2a, type: 3}
-  m_Name: EggYolk
-  m_EditorClassIdentifier: Assembly-CSharp::Object_Info
+  m_Script: {fileID: 11500000, guid: f3d6bc63783674668bb743df1a18b745, type: 3}
+  m_Name: EggYolk1
+  m_EditorClassIdentifier: Assembly-CSharp::Object_Info_Rottable
+  soundTypeDefault: 4
   soundTypeRotted: 3
-  soundTypeNotRotted: 4
-  immune: 0
   maxHealth: 10
+  transitionToMold: {fileID: 0}
+  transitionToRot: {fileID: 0}
+  transitionToGone: {fileID: 0}

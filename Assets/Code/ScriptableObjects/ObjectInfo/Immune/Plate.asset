@@ -9,10 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 855a1ffec072b49929295312f2e40f2a, type: 3}
-  m_Name: EggWhite
-  m_EditorClassIdentifier: Assembly-CSharp::Object_Info
-  soundTypeRotted: 3
-  soundTypeNotRotted: 3
-  immune: 0
-  maxHealth: 25
+  m_Script: {fileID: 11500000, guid: 4332c7d5892d344c09d0f28e91352302, type: 3}
+  m_Name: Plate
+  m_EditorClassIdentifier: Assembly-CSharp::Object_Info_Immune
+  soundTypeDefault: 2

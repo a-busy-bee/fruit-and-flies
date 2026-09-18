@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7828092853146715057}
   - component: {fileID: 9078518400601342912}
   m_Layer: 0
-  m_Name: object
+  m_Name: object_Rottable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -50,7 +50,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Object_Manager
   objectInfo: {fileID: 0}
-  objectAnimator: {fileID: 0}
 --- !u!114 &3567668161044140476
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -427,7 +426,7 @@ Animator:
   m_GameObject: {fileID: 3327988840934134068}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c5c187852040747ef80a31a9c0eb3148, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
