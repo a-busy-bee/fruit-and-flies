@@ -25,6 +25,12 @@ public class Object_Manager_Rottable : Object_Manager_Base
     private void Start()
     {
         currHealth = objectInfo.maxHealth;
+
+        AnimatorOverrideController overrideController = new AnimatorOverrideController(animator.runtimeAnimatorController);
+        animator.runtimeAnimatorController = overrideController;
+        overrideController["ToMold"] = objectInfo.transitionToMold;
+        overrideController["ToRot"] = objectInfo.transitionToRot;
+        overrideController["ToGone"] = objectInfo.transitionToGone;
     }
 
     public void SetState(ObjectRotState newState)
@@ -37,7 +43,7 @@ public class Object_Manager_Rottable : Object_Manager_Base
             case ObjectRotState.fresh:
                 break;
             case ObjectRotState.transitionToMold:
-                //objectAnimator.Play();
+                animator.Play("ToMold");
                 StartCoroutine(WaitForAnimEnd_ThenTransitionState());
 
                 break;
@@ -45,7 +51,7 @@ public class Object_Manager_Rottable : Object_Manager_Base
 
                 break;
             case ObjectRotState.tranisitionToRot:
-                //objectAnimator.Play();
+                animator.Play("ToRot");
                 StartCoroutine(WaitForAnimEnd_ThenTransitionState());
 
                 break;
@@ -53,7 +59,7 @@ public class Object_Manager_Rottable : Object_Manager_Base
 
                 break;
             case ObjectRotState.transitionToGone:
-                //objectAnimator.Play();
+                animator.Play("ToGone");
                 StartCoroutine(WaitForAnimEnd_ThenTransitionState());
 
                 break;

@@ -15,6 +15,6 @@ MonoBehaviour:
   soundTypeDefault: 0
   soundTypeRotted: 1
   maxHealth: 25
-  transitionToMold: {fileID: 0}
-  transitionToRot: {fileID: 0}
-  transitionToGone: {fileID: 0}
+  transitionToMold: {fileID: 7400000, guid: 42c79001789494b8cb7c72c09e3547b9, type: 2}
+  transitionToRot: {fileID: 7400000, guid: a9a0f832f25484b32a719f6e5c3632ca, type: 2}
+  transitionToGone: {fileID: 7400000, guid: 561781263c2dc4ee89c84f8a20256cfc, type: 2}

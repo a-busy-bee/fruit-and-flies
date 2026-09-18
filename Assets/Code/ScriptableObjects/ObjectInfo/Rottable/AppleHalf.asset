@@ -17,4 +17,4 @@ MonoBehaviour:
   maxHealth: 50
   transitionToMold: {fileID: 7400000, guid: abd6e7faf2fb7471f879a335d85d5350, type: 2}
   transitionToRot: {fileID: 7400000, guid: 84e755b536512484490005132227a8a2, type: 2}
-  transitionToGone: {fileID: 7400000, guid: 9fc4b1a4232e245ee8f57377bc29e6d6, type: 2}
+  transitionToGone: {fileID: 7400000, guid: 3e576446daff04129b51e63fdc05d468, type: 2}

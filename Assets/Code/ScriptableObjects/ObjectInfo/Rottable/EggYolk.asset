@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f3d6bc63783674668bb743df1a18b745, type: 3}
-  m_Name: EggWhite1
+  m_Name: EggYolk
   m_EditorClassIdentifier: Assembly-CSharp::Object_Info_Rottable
-  soundTypeDefault: 3
+  soundTypeDefault: 4
   soundTypeRotted: 3
-  maxHealth: 25
-  transitionToMold: {fileID: 0}
-  transitionToRot: {fileID: 0}
-  transitionToGone: {fileID: 0}
+  maxHealth: 10
+  transitionToMold: {fileID: 7400000, guid: 3acf0a5ab0000472b950b1bb7ba68d91, type: 2}
+  transitionToRot: {fileID: 7400000, guid: f66bea2ef965640f08886d73b3d1ae18, type: 2}
+  transitionToGone: {fileID: 7400000, guid: d4126cbcb6a924c6fa9814fe1352ea35, type: 2}
