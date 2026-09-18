@@ -65,7 +65,7 @@ public class AudioManager : MonoBehaviour
         }
 
         // SFX
-        GameObject audioManagerObj = gameObject.transform.GetChild(1).gameObject;
+        GameObject audioManagerObj = gameObject.transform.GetChild(0).gameObject;
         foreach (Sound s in sounds)
         {
             s.source = audioManagerObj.AddComponent<AudioSource>();
@@ -86,7 +86,7 @@ public class AudioManager : MonoBehaviour
         ChangeVolume(AudioSlider.VolumeType.Music, musicVol);
         ChangeVolume(AudioSlider.VolumeType.SFX, sfxVol);*/
 
-        SetTheme(MusicType.baseTheme);
+        //SetTheme(MusicType.baseTheme);
     }
 
     #region SFX

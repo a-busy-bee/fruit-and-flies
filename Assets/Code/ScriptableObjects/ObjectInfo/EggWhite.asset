@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 855a1ffec072b49929295312f2e40f2a, type: 3}
   m_Name: EggWhite
   m_EditorClassIdentifier: Assembly-CSharp::Object_Info
-  soundTypeRotted: 0
-  soundTypeNotRotted: 0
+  soundTypeRotted: 3
+  soundTypeNotRotted: 3
   immune: 0
   maxHealth: 25

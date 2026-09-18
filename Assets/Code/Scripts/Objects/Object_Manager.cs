@@ -19,13 +19,13 @@ public class Object_Manager : MonoBehaviour, IPointerClickHandler
     {
         if (isRotted)
         {
-            //AudioManager.instance.PlaySound(objectInfo.soundTypeRotted, true);
-            Debug.Log("play " + objectInfo.soundTypeRotted);
+            AudioManager.instance.PlaySound(objectInfo.soundTypeRotted, true);
+            //Debug.Log("play " + objectInfo.soundTypeRotted);
         }
         else
         {
-            //AudioManager.instance.PlaySound(objectInfo.soundTypeNotRotted, true);
-            Debug.Log("play " + objectInfo.soundTypeNotRotted);
+            AudioManager.instance.PlaySound(objectInfo.soundTypeNotRotted, true);
+            //Debug.Log("play " + objectInfo.soundTypeNotRotted);
         }
     }
 
