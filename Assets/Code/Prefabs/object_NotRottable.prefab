@@ -9,10 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 365684656924703220}
-  - component: {fileID: 1279172334800930909}
-  - component: {fileID: 3567668161044140476}
+  - component: {fileID: -7001333386330365473}
   - component: {fileID: 5506105629977428218}
   - component: {fileID: 7828092853146715057}
+  - component: {fileID: 7749481374942500477}
   m_Layer: 0
   m_Name: object_NotRottable
   m_TagString: Untagged
@@ -36,7 +36,7 @@ Transform:
   - {fileID: 1508849416911423743}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1279172334800930909
+--- !u!114 &-7001333386330365473
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -45,22 +45,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 3327988840934134068}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cab65adf0db8944a4b42419cb638307a, type: 3}
+  m_Script: {fileID: 11500000, guid: 3ffa455f91ed74d1aa33993deeea931d, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Object_Manager
-  objectInfo: {fileID: 0}
---- !u!114 &3567668161044140476
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3327988840934134068}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b93df6c5321e94616a154f91c4090fec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Object_Decay
+  m_EditorClassIdentifier: Assembly-CSharp::Object_Manager_Immune
+  animator: {fileID: 7749481374942500477}
+  objectInfo: {fileID: 11400000, guid: 0363b1b12a461407e847d5dc12692739, type: 2}
 --- !u!212 &5506105629977428218
 SpriteRenderer:
   serializedVersion: 3
@@ -415,6 +404,28 @@ PolygonCollider2D:
       - {x: -1.225, y: 1.985}
       - {x: -1.245, y: 1.985}
   m_UseDelaunayMesh: 1
+--- !u!95 &7749481374942500477
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3327988840934134068}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &6815470597550493425
 GameObject:
   m_ObjectHideFlags: 0
