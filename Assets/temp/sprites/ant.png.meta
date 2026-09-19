@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -126,12 +126,12 @@ TextureImporter:
       name: "Screenshot 2026-09-12 at 10.18.21\u202FPM_0"
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1526
-        height: 1842
+        x: 9
+        y: 3
+        width: 32
+        height: 55
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -140,6 +140,28 @@ TextureImporter:
       bones: []
       spriteID: d592903886e4066c0800000000000000
       internalID: -4152232645653616291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ant_0
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 21
+        width: 73
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e343699c295a40c8b1053d8bb002faf
+      internalID: 716890726
       vertices: []
       indices: 
       edges: []
@@ -159,6 +181,7 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       "Screenshot 2026-09-12 at 10.18.21\u202FPM_0": -4152232645653616291
+      ant_0: 716890726
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
