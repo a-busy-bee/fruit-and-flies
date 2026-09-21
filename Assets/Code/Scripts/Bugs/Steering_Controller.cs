@@ -78,6 +78,9 @@ public class Steering_Controller : MonoBehaviour
 		// update position
 		Vector3 newPos = transform.position + velocity * Time.deltaTime;
 		transform.position = new Vector3(newPos.x, newPos.y, -5);
+
+		// check if position is close enough to the target
+		
 		
 	}
 

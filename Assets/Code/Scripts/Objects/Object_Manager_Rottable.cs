@@ -7,17 +7,18 @@ using UnityEngine.EventSystems;
 public class Object_Manager_Rottable : Object_Manager_Base
 {
     [SerializeField] private Object_Info_Rottable objectInfo;
+    [SerializeField] private Mold[] moldsStage1;
+    [SerializeField] private Mold[] moldsStage2;
     private float currHealth;
+    private float damageDebuff;
 
     public enum ObjectRotState
     {
         fresh,
-        transitionToMold,
-        moldy,
-        tranisitionToRot,
-        rotten,
-        transitionToGone,
-        gone
+        transitionToMold,   // mold appear anim (no contact, spawn mold)
+        moldy,              // mold stays half rot (contact allowed)
+        tranisitionToRot,   // final mold appear anim (no contact, more mold spawns, anim transition to final rot)
+        rotten              // final sprite (no movement, no contact, for now replace with temp rot sprite)
     }
     private ObjectRotState currRotState;
     private ObjectRotState prevRotState;
@@ -28,9 +29,9 @@ public class Object_Manager_Rottable : Object_Manager_Base
 
         AnimatorOverrideController overrideController = new AnimatorOverrideController(animator.runtimeAnimatorController);
         animator.runtimeAnimatorController = overrideController;
-        overrideController["ToMold"] = objectInfo.transitionToMold;
         overrideController["ToRot"] = objectInfo.transitionToRot;
-        overrideController["ToGone"] = objectInfo.transitionToGone;
+
+        animator.enabled = false;
     }
 
     public void SetState(ObjectRotState newState)
@@ -43,27 +44,29 @@ public class Object_Manager_Rottable : Object_Manager_Base
             case ObjectRotState.fresh:
                 break;
             case ObjectRotState.transitionToMold:
-                animator.Play("ToMold");
-                StartCoroutine(WaitForAnimEnd_ThenTransitionState());
+                
+                foreach (Mold mold in moldsStage1)
+                {
+                    mold.GrowMold();
+                }
+
+                StartCoroutine(MoldStage1());
 
                 break;
             case ObjectRotState.moldy:
 
                 break;
             case ObjectRotState.tranisitionToRot:
-                animator.Play("ToRot");
-                StartCoroutine(WaitForAnimEnd_ThenTransitionState());
+                
+                foreach (Mold mold in moldsStage2)
+                {
+                    mold.GrowMold();
+                }
+
+                StartCoroutine(MoldStage2());
 
                 break;
             case ObjectRotState.rotten:
-
-                break;
-            case ObjectRotState.transitionToGone:
-                animator.Play("ToGone");
-                StartCoroutine(WaitForAnimEnd_ThenTransitionState());
-
-                break;
-            case ObjectRotState.gone:
 
                 break;
         }
@@ -73,7 +76,7 @@ public class Object_Manager_Rottable : Object_Manager_Base
     {
         if (currRotState == ObjectRotState.transitionToMold ||
             currRotState == ObjectRotState.tranisitionToRot ||
-            currRotState == ObjectRotState.transitionToGone) return; // if transitioning anim, don't take damage
+            currRotState == ObjectRotState.rotten) return; // if transitioning anim, don't take damage
 
         currHealth -= damage;
 
@@ -82,15 +85,45 @@ public class Object_Manager_Rottable : Object_Manager_Base
         {
             SetState(ObjectRotState.transitionToMold);
         }
-        else if (currRotState == ObjectRotState.moldy && currHealth <= 0.4f * objectInfo.maxHealth)
+        else if (currRotState == ObjectRotState.moldy && currHealth <= 0.3f * objectInfo.maxHealth)
         {
             SetState(ObjectRotState.tranisitionToRot);
         }
-        else if (currRotState == ObjectRotState.rotten && currHealth <= 0.1 * objectInfo.maxHealth)
+    }
+
+    private void Update()
+    {
+        CheckRot(damageDebuff);
+    }
+
+    private void AddDamageDebuff(float dmg)
+    {
+        damageDebuff += dmg;
+    }
+
+    #region Debug/Demo
+
+    [ContextMenu("GrowMold")] // debug
+    public void GrowAllMold()
+    {
+        foreach (Mold mold in moldsStage1)
         {
-            SetState(ObjectRotState.transitionToGone);
+            mold.GrowMold();
+        }
+
+        foreach (Mold mold in moldsStage2)
+        {
+            mold.GrowMold();
         }
     }
+
+    [ContextMenu("IncrementState")]
+    public void IncrementState()
+    {
+        SetState(currRotState + 1);
+    }
+
+    # endregion
 
     #region Contact 
     override public void OnPointerClick(PointerEventData data)
@@ -116,6 +149,7 @@ public class Object_Manager_Rottable : Object_Manager_Base
         if (bug.CausesDamage())
         {
             CheckRot(bug.GetInitialDamage());
+            AddDamageDebuff(bug.GetDamageDebuff());
         }
     }
 
@@ -141,12 +175,24 @@ public class Object_Manager_Rottable : Object_Manager_Base
     #endregion
 
     #region Helpers & IEnumerators
-    private IEnumerator WaitForAnimEnd_ThenTransitionState()
+    private IEnumerator MoldStage1()
     {
         yield return new WaitForSeconds(1);
 
         SetState(currRotState + 1);
     }
-    
+
+    private IEnumerator MoldStage2()
+    {
+        yield return new WaitForSeconds(2);
+
+        animator.enabled = true;
+        animator.Play("ToRot");
+
+        yield return new WaitForSeconds(1);
+
+        SetState(currRotState + 1);
+    }
+
     #endregion
 }

@@ -7,6 +7,7 @@ public class Bug_Info : ScriptableObject
 	public bool causesDamage;
 	public float initialDamage;
 	public float continuousDamage; // while the insect remains touching the object
+	public float damageDebuff; // how much the insect accelerates rot
 
 	[Header("Movement")]
 	public float maxVelocity;
