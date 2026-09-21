@@ -7,6 +7,7 @@ using UnityEngine.EventSystems;
 public class Object_Manager_Rottable : Object_Manager_Base
 {
     [SerializeField] private Object_Info_Rottable objectInfo;
+    [SerializeField] private Mold[] molds;
     private float currHealth;
 
     public enum ObjectRotState
@@ -89,6 +90,15 @@ public class Object_Manager_Rottable : Object_Manager_Base
         else if (currRotState == ObjectRotState.rotten && currHealth <= 0.1 * objectInfo.maxHealth)
         {
             SetState(ObjectRotState.transitionToGone);
+        }
+    }
+
+    [ContextMenu("GrowMold")] // debug
+    public void GrowAllMold()
+    {
+        foreach (Mold mold in molds)
+        {
+            mold.GrowMold();
         }
     }
 
