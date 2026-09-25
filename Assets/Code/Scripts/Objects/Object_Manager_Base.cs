@@ -8,7 +8,7 @@ using Random = UnityEngine.Random;
 
 public class Object_Manager_Base : MonoBehaviour, IPointerClickHandler //TODO: split immune and not immune objects into two classes
 {
-    [SerializeField] protected Animator animator;
+    [SerializeField] protected Animator rotAnimator;
     private const int maxRerollsForRandomPoint = 50;
 
     #region Contact 
