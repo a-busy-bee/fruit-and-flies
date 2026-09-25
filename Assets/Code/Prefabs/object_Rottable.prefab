@@ -50,7 +50,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e48cd3581bf948d88a9638bfe72a0d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Object_Manager_Rottable
-  animator: {fileID: 9078518400601342912}
+  rotAnimator: {fileID: 9078518400601342912}
   objectInfo: {fileID: 11400000, guid: 051b2f9666fcc4b1b8133d76c82782b9, type: 2}
   moldsStage1: []
   moldsStage2: []

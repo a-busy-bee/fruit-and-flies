@@ -27,11 +27,11 @@ public class Object_Manager_Rottable : Object_Manager_Base
     {
         currHealth = objectInfo.maxHealth;
 
-        AnimatorOverrideController overrideController = new AnimatorOverrideController(animator.runtimeAnimatorController);
-        animator.runtimeAnimatorController = overrideController;
+        AnimatorOverrideController overrideController = new AnimatorOverrideController(rotAnimator.runtimeAnimatorController);
+        rotAnimator.runtimeAnimatorController = overrideController;
         overrideController["ToRot"] = objectInfo.transitionToRot;
 
-        animator.enabled = false;
+        //rotAnimator.enabled = false;
     }
 
     public void SetState(ObjectRotState newState)
@@ -186,8 +186,8 @@ public class Object_Manager_Rottable : Object_Manager_Base
     {
         yield return new WaitForSeconds(2);
 
-        animator.enabled = true;
-        animator.Play("ToRot");
+        rotAnimator.SetTrigger("Rot");
+        //rotAnimator.Play("ToRot");
 
         yield return new WaitForSeconds(1);
 
