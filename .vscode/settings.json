@@ -67,5 +67,5 @@
         "*.sln": "*.csproj",
         "*.slnx": "*.csproj"
     },
-    "dotnet.defaultSolution": "Fruit and Flies.slnx"
+    "dotnet.defaultSolution": "fruit-and-flies.slnx"
 }
