@@ -17836,7 +17836,7 @@ PrefabInstance:
     - target: {fileID: 2304081004509647670, guid: 5f45cd764c30545119222c3d76b03aec, type: 3}
       propertyPath: objectInfo
       value: 
-      objectReference: {fileID: 11400000, guid: 81f1362f54d864540a9ede8c10953f02, type: 2}
+      objectReference: {fileID: 11400000, guid: 051b2f9666fcc4b1b8133d76c82782b9, type: 2}
     - target: {fileID: 2304081004509647670, guid: 5f45cd764c30545119222c3d76b03aec, type: 3}
       propertyPath: moldsStage1.Array.size
       value: 2
@@ -21936,6 +21936,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 7838261664236302546, guid: 5f45cd764c30545119222c3d76b03aec, type: 3}
+    - {fileID: 4092242684670726044, guid: 5f45cd764c30545119222c3d76b03aec, type: 3}
+    - {fileID: 6818777879613348699, guid: 5f45cd764c30545119222c3d76b03aec, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 365684656924703220, guid: 5f45cd764c30545119222c3d76b03aec, type: 3}
       insertIndex: -1
@@ -22959,7 +22961,7 @@ PrefabInstance:
       objectReference: {fileID: 1696352466}
     - target: {fileID: 2304081004509647670, guid: 5f45cd764c30545119222c3d76b03aec, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2304081004509647670, guid: 5f45cd764c30545119222c3d76b03aec, type: 3}
       propertyPath: objectInfo
@@ -30377,6 +30379,8 @@ PrefabInstance:
     - {fileID: 9078518400601342912, guid: 5f45cd764c30545119222c3d76b03aec, type: 3}
     m_RemovedGameObjects:
     - {fileID: 7838261664236302546, guid: 5f45cd764c30545119222c3d76b03aec, type: 3}
+    - {fileID: 4092242684670726044, guid: 5f45cd764c30545119222c3d76b03aec, type: 3}
+    - {fileID: 6818777879613348699, guid: 5f45cd764c30545119222c3d76b03aec, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 365684656924703220, guid: 5f45cd764c30545119222c3d76b03aec, type: 3}
       insertIndex: -1
@@ -48171,6 +48175,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 7838261664236302546, guid: 5f45cd764c30545119222c3d76b03aec, type: 3}
+    - {fileID: 4092242684670726044, guid: 5f45cd764c30545119222c3d76b03aec, type: 3}
+    - {fileID: 6818777879613348699, guid: 5f45cd764c30545119222c3d76b03aec, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 365684656924703220, guid: 5f45cd764c30545119222c3d76b03aec, type: 3}
       insertIndex: -1
