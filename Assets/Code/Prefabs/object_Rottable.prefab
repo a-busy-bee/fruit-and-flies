@@ -52,6 +52,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Object_Manager_Rottable
   animator: {fileID: 9078518400601342912}
   objectInfo: {fileID: 11400000, guid: 051b2f9666fcc4b1b8133d76c82782b9, type: 2}
+  moldsStage1: []
+  moldsStage2: []
 --- !u!212 &5506105629977428218
 SpriteRenderer:
   serializedVersion: 3
@@ -101,7 +103,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -1512327360, guid: fda5953142c1347b6a1771a55003df4c, type: 3}
+  m_Sprite: {fileID: -677394160, guid: b4213fc49763be143bf4fe7b06f2a236, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -150,7 +152,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5.97, y: 4.93}
+    oldSize: {x: 5.95, y: 4.8809414}
     newSize: {x: 5.97, y: 4.93}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -486,7 +488,7 @@ Transform:
   m_GameObject: {fileID: 6815470597550493425}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.14, y: -1.54, z: 0.5}
+  m_LocalPosition: {x: 0.12, y: -1.19, z: 0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
