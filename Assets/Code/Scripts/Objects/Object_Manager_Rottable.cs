@@ -187,7 +187,6 @@ public class Object_Manager_Rottable : Object_Manager_Base
         yield return new WaitForSeconds(2);
 
         rotAnimator.SetTrigger("Rot");
-        //rotAnimator.Play("ToRot");
 
         yield return new WaitForSeconds(1);
 

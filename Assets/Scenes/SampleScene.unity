@@ -48121,6 +48121,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2304081004509647670, guid: 5f45cd764c30545119222c3d76b03aec, type: 3}
+      propertyPath: objectInfo
+      value: 
+      objectReference: {fileID: 11400000, guid: 81f1362f54d864540a9ede8c10953f02, type: 2}
+    - target: {fileID: 2304081004509647670, guid: 5f45cd764c30545119222c3d76b03aec, type: 3}
       propertyPath: moldsStage1.Array.size
       value: 2
       objectReference: {fileID: 0}
