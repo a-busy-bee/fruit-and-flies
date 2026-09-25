@@ -18,7 +18,7 @@ public class Steering_Controller : MonoBehaviour
 {
 	[SerializeField] private BehaviorWeightPair[] behaviors;
 	private Bug_Info bugInfo;
-	private Vector3 velocity = new Vector3(-1, -2, 0);
+	private Vector3 velocity = Vector3.zero;
 	private GameObject currTargetObj;
 
 	private void Start()
@@ -31,6 +31,8 @@ public class Steering_Controller : MonoBehaviour
 		{
 			behavior.behavior.SetNewTarget(targetPos);
 		}
+
+		Debug.Log(targetPos);
 	}
 
 	public void TargetReached()

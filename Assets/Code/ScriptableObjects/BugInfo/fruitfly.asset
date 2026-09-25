@@ -15,9 +15,10 @@ MonoBehaviour:
   causesDamage: 0
   initialDamage: 0
   continuousDamage: 0
+  damageDebuff: 0
   maxVelocity: 15
-  slowingRadius: 0.25
-  wanderCircleDistance: {x: 1.5, y: 0, z: 0}
-  wanderCircleRadius: 2
+  slowingRadius: 1
+  wanderCircleDistance: {x: 0.8, y: 0, z: 0}
+  wanderCircleRadius: 4
   maxForce: 15
-  mass: 1
+  mass: 0.5
