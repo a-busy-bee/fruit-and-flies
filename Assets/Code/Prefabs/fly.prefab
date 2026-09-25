@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 8484634333532291298}
   - component: {fileID: 3963863907822460402}
   - component: {fileID: 991105060643523591}
+  - component: {fileID: 8843499755870487584}
   - component: {fileID: 1644008307553058749}
   m_Layer: 0
   m_Name: fly
@@ -125,11 +126,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Steering_Controller
   behaviors:
   - behavior: {fileID: 8484634333532291298}
-    weight: 0.8
+    weight: 0.4
   - behavior: {fileID: 3963863907822460402}
     weight: 0.2
   - behavior: {fileID: 991105060643523591}
     weight: 0
+  - behavior: {fileID: 8843499755870487584}
+    weight: 0.2
 --- !u!114 &8484634333532291298
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -166,6 +169,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79b5c5ed4e4574f9ab73d038ddea7909, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Behavior_Flee
+--- !u!114 &8843499755870487584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2952259769455102329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51f9de80b7852415a804b6a9ee956ead, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Behavior_StayInBounds
 --- !u!58 &1644008307553058749
 CircleCollider2D:
   m_ObjectHideFlags: 0
