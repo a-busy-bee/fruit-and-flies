@@ -42,8 +42,10 @@ public class Bug_Manager : MonoBehaviour, IPointerClickHandler
         {
             Rigidbody2D rb = gameObject.AddComponent<Rigidbody2D>();
 
-            rb.mass = 2f;
+            rb.mass = 10f;
             isDead = true;
+
+            Destroy(GetComponent<CircleCollider2D>());
         }
 
 
