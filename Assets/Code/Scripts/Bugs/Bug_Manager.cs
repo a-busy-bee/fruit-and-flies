@@ -26,6 +26,14 @@ public class Bug_Manager : MonoBehaviour, IPointerClickHandler
         return bugInfo.damageDebuff;
     }
 
+    public void CheckDamage(GameObject collision)
+    {
+        if (collision == GetComponent<Steering_Controller>().GetTarget())
+        {
+            // do stuff
+        }
+    }
+
     #endregion
 
     public Bug_Info GetBugInfo()

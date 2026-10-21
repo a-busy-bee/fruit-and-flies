@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Numerics;
 
 using Vector3 = UnityEngine.Vector3;
+using Vector2 = UnityEngine.Vector2;
 using Random = UnityEngine.Random;
 
 [Serializable]
@@ -20,6 +21,8 @@ public class Steering_Controller : MonoBehaviour
 	private Bug_Info bugInfo;
 	private Vector3 velocity = Vector3.zero;
 	private GameObject currTargetObj;
+	private const float TARGET_DIST_THRESHOLD = 10;
+	private bool targetReached = false;
 
 	private void Start()
 	{
@@ -57,6 +60,8 @@ public class Steering_Controller : MonoBehaviour
 		{
 			behavior.behavior.SetNewTarget(targetPos);
 		}
+
+		StartCoroutine(WaitBeforeResettingTargetReached());
 	}
 
 	private void Update()
@@ -82,8 +87,19 @@ public class Steering_Controller : MonoBehaviour
 		transform.position = new Vector3(newPos.x, newPos.y, -5);
 
 		// check if position is close enough to the target
+		if (!targetReached && Vector2.Distance((Vector2)transform.position, currTargetObj.transform.position) <= TARGET_DIST_THRESHOLD)
+		{
+			targetReached = true;
+			TargetReached();
+		}
 		
-		
+	}
+
+	private IEnumerator WaitBeforeResettingTargetReached()
+	{
+		yield return new WaitForSeconds(2f);
+
+		targetReached = false;
 	}
 
 	public float GetBugMaxVelocity()
@@ -106,5 +122,8 @@ public class Steering_Controller : MonoBehaviour
 	{
 		return velocity;
 	}
-	
+	public GameObject GetTarget()
+	{
+		return currTargetObj;
+	}
 }

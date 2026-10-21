@@ -210,6 +210,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: fly (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 2952259769455102329, guid: fd5f23f18f33a4678aefd6f83656ef4f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5781945391680666512, guid: fd5f23f18f33a4678aefd6f83656ef4f, type: 3}
       propertyPath: behaviors.Array.data[0].weight
       value: 0.4
@@ -290,6 +294,10 @@ PrefabInstance:
     - target: {fileID: 2952259769455102329, guid: fd5f23f18f33a4678aefd6f83656ef4f, type: 3}
       propertyPath: m_Name
       value: fly (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2952259769455102329, guid: fd5f23f18f33a4678aefd6f83656ef4f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5781945391680666512, guid: fd5f23f18f33a4678aefd6f83656ef4f, type: 3}
       propertyPath: behaviors.Array.data[0].weight
@@ -500,6 +508,10 @@ PrefabInstance:
     - target: {fileID: 2952259769455102329, guid: fd5f23f18f33a4678aefd6f83656ef4f, type: 3}
       propertyPath: m_Name
       value: fly (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2952259769455102329, guid: fd5f23f18f33a4678aefd6f83656ef4f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5781945391680666512, guid: fd5f23f18f33a4678aefd6f83656ef4f, type: 3}
       propertyPath: behaviors.Array.data[0].weight
@@ -4565,6 +4577,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: fly (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2952259769455102329, guid: fd5f23f18f33a4678aefd6f83656ef4f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5781945391680666512, guid: fd5f23f18f33a4678aefd6f83656ef4f, type: 3}
       propertyPath: behaviors.Array.data[0].weight
       value: 0.4
@@ -5101,6 +5117,10 @@ PrefabInstance:
     - target: {fileID: 2952259769455102329, guid: fd5f23f18f33a4678aefd6f83656ef4f, type: 3}
       propertyPath: m_Name
       value: fly (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2952259769455102329, guid: fd5f23f18f33a4678aefd6f83656ef4f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5781945391680666512, guid: fd5f23f18f33a4678aefd6f83656ef4f, type: 3}
       propertyPath: behaviors.Array.data[0].weight
