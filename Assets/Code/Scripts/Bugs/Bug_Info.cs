@@ -15,6 +15,7 @@ public class Bug_Info : ScriptableObject
 	public Vector3 wanderCircleDistance;
 	public float wanderCircleRadius;
 	public float maxForce;
+	public float maxFleeForce;
 	public float mass;
 	
 }
