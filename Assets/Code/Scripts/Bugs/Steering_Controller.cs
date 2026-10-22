@@ -21,6 +21,7 @@ public class Steering_Controller : MonoBehaviour
 	private Bug_Info bugInfo;
 	private Vector3 velocity = Vector3.zero;
 	private GameObject currTargetObj;
+	private Vector3 currTargetPos;
 	private const float TARGET_DIST_THRESHOLD = 10;
 	private bool targetReached = false;
 
@@ -29,13 +30,13 @@ public class Steering_Controller : MonoBehaviour
 		bugInfo = GetComponent<Bug_Manager>().GetBugInfo();
 
 		currTargetObj = LevelManager.instance.GetRandomObject();
-		Vector3 targetPos = currTargetObj.GetComponent<Object_Manager_Base>().GetRandomPointOnObj();
+		currTargetPos = currTargetObj.GetComponent<Object_Manager_Base>().GetRandomPointOnObj();
 		foreach (BehaviorWeightPair behavior in behaviors)
 		{
-			behavior.behavior.SetNewTarget(targetPos);
+			behavior.behavior.SetNewTarget(currTargetPos);
 		}
 
-		Debug.Log(targetPos);
+		Debug.Log(currTargetPos);
 	}
 
 	public void TargetReached()
@@ -44,21 +45,28 @@ public class Steering_Controller : MonoBehaviour
 		float chanceToStay = Random.Range(0.0f, 1.0f);
 
 		// if roll is < 0.4, get new object
-		if (chanceToStay < 0.4f) currTargetObj = LevelManager.instance.GetRandomObject();
+		if (chanceToStay < 0.7f) currTargetObj = LevelManager.instance.GetRandomObject();
 
 		// choose new target pos
-		Vector3 targetPos = currTargetObj.GetComponent<Object_Manager_Base>().GetRandomPointOnObj();
+		if (currTargetObj != null)
+		{
+			currTargetPos = currTargetObj.GetComponent<Object_Manager_Base>().GetRandomPointOnObj();
+		}
+		else
+		{
+			currTargetPos = LevelManager.instance.GetRandomPointInAir();
+		}
 
 		// if 0.2 < roll < 0.4, choose target in the sky instead
-		if (chanceToStay > 0.2 && chanceToStay < 0.4)
+		if (chanceToStay < 0.25f)
 		{
-			targetPos = LevelManager.instance.GetRandomPointInAir();
+			currTargetPos = LevelManager.instance.GetRandomPointInAir();
 			currTargetObj = null;
 		}
 
 		foreach (BehaviorWeightPair behavior in behaviors)
 		{
-			behavior.behavior.SetNewTarget(targetPos);
+			behavior.behavior.SetNewTarget(currTargetPos);
 		}
 
 		StartCoroutine(WaitBeforeResettingTargetReached());
@@ -82,12 +90,14 @@ public class Steering_Controller : MonoBehaviour
 		velocity += acceleration * Time.deltaTime;
 		velocity = Vector3.ClampMagnitude(velocity, bugInfo.maxVelocity);
 
+		GetComponent<Bug_Manager>().CheckFlipSprite(velocity);
+
 		// update position
 		Vector3 newPos = transform.position + velocity * Time.deltaTime;
 		transform.position = new Vector3(newPos.x, newPos.y, -5);
 
 		// check if position is close enough to the target
-		if (!targetReached && Vector2.Distance((Vector2)transform.position, currTargetObj.transform.position) <= TARGET_DIST_THRESHOLD)
+		if (!targetReached && Vector2.Distance((Vector2)transform.position, (Vector2)currTargetPos) <= TARGET_DIST_THRESHOLD)
 		{
 			targetReached = true;
 			TargetReached();

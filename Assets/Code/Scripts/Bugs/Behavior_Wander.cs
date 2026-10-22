@@ -12,8 +12,6 @@ public class Behavior_Wander : Behavior
     float angleChange = 0.1f;
     override public Vector3 CalculateForce(Steering_Controller controller)
     {
-        if (target == null) return Vector3.zero;
-
         // a circle directly in front of the insect
         // used to calculate displacement from target path
         Vector3 circleCenter;

@@ -4,7 +4,13 @@ using UnityEngine.EventSystems;
 public class Bug_Manager : MonoBehaviour, IPointerClickHandler
 {
     [SerializeField] private Bug_Info bugInfo;
+    private SpriteRenderer spriteRenderer;
     private bool isDead;
+
+    private void Start()
+    {
+        spriteRenderer = GetComponent<SpriteRenderer>();
+    }
 
     #region Damage
     public bool CausesDamage()
@@ -56,5 +62,17 @@ public class Bug_Manager : MonoBehaviour, IPointerClickHandler
 
 
        
+    }
+
+    public void CheckFlipSprite(Vector3 velocity)
+    {
+        if (spriteRenderer.flipX && velocity.x > 0)
+        {
+            spriteRenderer.flipX = false;
+        }
+        else if (!spriteRenderer.flipX && velocity.x < 0)
+        {
+            spriteRenderer.flipX = true;
+        }
     }
 }

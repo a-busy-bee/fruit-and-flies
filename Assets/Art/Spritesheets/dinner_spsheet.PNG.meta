@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -126,12 +126,12 @@ TextureImporter:
       name: "Screenshot 2026-09-12 at 10.18.21\u202FPM_0"
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1526
-        height: 1842
+        x: 51
+        y: 120
+        width: 458
+        height: 224
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -140,6 +140,424 @@ TextureImporter:
       bones: []
       spriteID: d592903886e4066c0800000000000000
       internalID: -4152232645653616291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dinner_spsheet_0
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 353
+        width: 495
+        height: 641
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b35b5067ee3e49a5b4ce04217676b33
+      internalID: 403104513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dinner_spsheet_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 1000
+        width: 464
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9243ddf414254f9bbbeeab574c94ded
+      internalID: -802751709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dinner_spsheet_2
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 1145
+        width: 521
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e88ef5f10eb4b470880982f39a90616d
+      internalID: -1404771593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dinner_spsheet_3
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 1379
+        width: 243
+        height: 524
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4d2d16ed636e4ca59e0c24f5c005bfc
+      internalID: -882254110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dinner_spsheet_4
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 1029
+        width: 306
+        height: 820
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d391f45b1e59f4243bfc05b59bc8cabb
+      internalID: 468310166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dinner_spsheet_5
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 653
+        width: 196
+        height: 354
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9afdae4ab833048698ce9ce36d6a8a54
+      internalID: 191560213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dinner_spsheet_6
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 0
+        width: 1098
+        height: 445
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30db73b8b833f453680b7b1b8459f600
+      internalID: -1211836614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dinner_spsheet_7
+      rect:
+        serializedVersion: 2
+        x: 1850
+        y: 85
+        width: 164
+        height: 363
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e6c1e17dab734518b1cd5506c5421a2
+      internalID: 1627150632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dinner_spsheet_8
+      rect:
+        serializedVersion: 2
+        x: 2232
+        y: 0
+        width: 262
+        height: 593
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3628c5060e7341f9b0d01b2d84419f1
+      internalID: -772598353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dinner_spsheet_9
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 457
+        width: 1013
+        height: 578
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: feb26e56116c1461ba5406ddda0571bc
+      internalID: -838784256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dinner_spsheet_10
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 1041
+        width: 676
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19f4eb4a318ac4d6597e040288bdf983
+      internalID: -374051185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dinner_spsheet_11
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 1474
+        width: 650
+        height: 407
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9878a6dbd4c694817b00ce6a40706c49
+      internalID: 1047413287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dinner_spsheet_12
+      rect:
+        serializedVersion: 2
+        x: 1778
+        y: 962
+        width: 634
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6ae00b968e65425f8a885ca6e10cb12
+      internalID: -174208331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dinner_spsheet_13
+      rect:
+        serializedVersion: 2
+        x: 2418
+        y: 754
+        width: 401
+        height: 1146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 782965c208b3c464aba141192dc892e6
+      internalID: 197059251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dinner_spsheet_14
+      rect:
+        serializedVersion: 2
+        x: 1840
+        y: 599
+        width: 539
+        height: 293
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7f5fa711e9ab4d929f5e6f35986abd0
+      internalID: 2073798797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dinner_spsheet_15
+      rect:
+        serializedVersion: 2
+        x: 2020
+        y: 466
+        width: 161
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 146f7d696f0aa4816816156f60684d6f
+      internalID: 2060697635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dinner_spsheet_16
+      rect:
+        serializedVersion: 2
+        x: 2512
+        y: 122
+        width: 1288
+        height: 556
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ae2349eeb0fc46dbbb70cb6cfabeb8a
+      internalID: 1986956223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dinner_spsheet_17
+      rect:
+        serializedVersion: 2
+        x: 2828
+        y: 889
+        width: 978
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e94dac9229ab444119f93933cccf506b
+      internalID: -1854313635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dinner_spsheet_18
+      rect:
+        serializedVersion: 2
+        x: 2829
+        y: 1204
+        width: 969
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28e3c0435b3884f289407cd85e8fa4c8
+      internalID: -1131641254
       vertices: []
       indices: 
       edges: []
@@ -159,6 +577,25 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       "Screenshot 2026-09-12 at 10.18.21\u202FPM_0": -4152232645653616291
+      dinner_spsheet_0: 403104513
+      dinner_spsheet_1: -802751709
+      dinner_spsheet_10: -374051185
+      dinner_spsheet_11: 1047413287
+      dinner_spsheet_12: -174208331
+      dinner_spsheet_13: 197059251
+      dinner_spsheet_14: 2073798797
+      dinner_spsheet_15: 2060697635
+      dinner_spsheet_16: 1986956223
+      dinner_spsheet_17: -1854313635
+      dinner_spsheet_18: -1131641254
+      dinner_spsheet_2: -1404771593
+      dinner_spsheet_3: -882254110
+      dinner_spsheet_4: 468310166
+      dinner_spsheet_5: 191560213
+      dinner_spsheet_6: -1211836614
+      dinner_spsheet_7: 1627150632
+      dinner_spsheet_8: -772598353
+      dinner_spsheet_9: -838784256
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
