@@ -5013,6 +5013,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: quarter
       objectReference: {fileID: 0}
+    - target: {fileID: 3327988840934134068, guid: 5f45cd764c30545119222c3d76b03aec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6685048838156415642, guid: 5f45cd764c30545119222c3d76b03aec, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -5497,7 +5501,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2952259769455102329, guid: af23b5bb0183049f4b556a558023d823, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4222761340135374924, guid: af23b5bb0183049f4b556a558023d823, type: 3}
       propertyPath: bugInfo
@@ -6022,7 +6026,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2952259769455102329, guid: af23b5bb0183049f4b556a558023d823, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4222761340135374924, guid: af23b5bb0183049f4b556a558023d823, type: 3}
       propertyPath: bugInfo
