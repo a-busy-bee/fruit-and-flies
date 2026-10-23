@@ -119,6 +119,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -130,8 +143,8 @@ TextureImporter:
         y: 1220
         width: 143
         height: 480
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5188795, y: 1.237114}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3575,8 +3588,8 @@ TextureImporter:
         y: 1048
         width: 118
         height: 148
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.43683264, y: -0.000834697}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4013,8 +4026,8 @@ TextureImporter:
         y: 868
         width: 615
         height: 253
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.4963073, y: 0.027257143}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4806,8 +4819,8 @@ TextureImporter:
         y: 792
         width: 259
         height: 250
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.48830912, y: 0.015528564}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
