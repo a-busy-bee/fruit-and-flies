@@ -60,9 +60,6 @@ public class Bug_Manager : MonoBehaviour, IPointerClickHandler
             rb.mass = 2f;
             isDead = true;  
         }
-
-
-       
     }
 
     public void CheckFlipSprite(Vector3 velocity)

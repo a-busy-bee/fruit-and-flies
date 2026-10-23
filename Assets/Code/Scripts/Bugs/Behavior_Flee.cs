@@ -17,4 +17,9 @@ public class Behavior_Flee : Behavior
         float maxFleeForce = GetComponent<Bug_Manager>().GetBugInfo().maxFleeForce;
         return Vector3.ClampMagnitude(desiredVelocity - controller.GetVelocity(), maxFleeForce);
     }
+
+	public override bool IsFleeing()
+	{
+		return true;
+	}
 }

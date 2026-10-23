@@ -14,4 +14,9 @@ public class Behavior : MonoBehaviour
     {
         target = newTarget;
     }
+
+    virtual public bool IsFleeing()
+    {
+        return false;
+    }
 }

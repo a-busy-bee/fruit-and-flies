@@ -49,14 +49,18 @@ public class Steering_Controller : MonoBehaviour
 		Vector3 totalSteeringForce = Vector3.zero;
 
 		// add up all of the behavior steering forces
+		bool isFleeing = false;
 		foreach (BehaviorWeightPair behavior in behaviors)
 		{
-			totalSteeringForce += behavior.behavior.CalculateForce(this) * behavior.weight;
+			Vector3 force = behavior.behavior.CalculateForce(this) * behavior.weight;
+			if (behavior.behavior.IsFleeing() && force != Vector3.zero) isFleeing = true;
+			totalSteeringForce += force;
 		}
 
 		// clamp so they don't go crazy
 		float maxForce = bugInfo.maxForce;
 		if (targetReached) maxForce /= 4.0f;
+		if (isFleeing) maxForce = bugInfo.maxForce * 2f;
 		totalSteeringForce = Vector3.ClampMagnitude(totalSteeringForce, maxForce);
 
 		// math 
