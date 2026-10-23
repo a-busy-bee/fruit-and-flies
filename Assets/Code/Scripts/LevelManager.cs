@@ -1,9 +1,12 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class LevelManager : MonoBehaviour
 {
     public static LevelManager instance { get; private set; }
     [SerializeField] private GameObject[] objects;
+
+    private List<Vector3> currTargets; 
 
     public GameObject GetRandomObject()
     {

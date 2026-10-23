@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: bigFly
   m_EditorClassIdentifier: Assembly-CSharp::Bug_Info
   causesDamage: 0
-  initialDamage: 0
-  continuousDamage: 0
-  damageDebuff: 0
+  initialDamage: 1
+  continuousDamage: 0.1
+  damageDebuff: 0.1
   maxVelocity: 10
   slowingRadius: 1
   wanderCircleDistance: {x: 0.8, y: 0, z: 0}

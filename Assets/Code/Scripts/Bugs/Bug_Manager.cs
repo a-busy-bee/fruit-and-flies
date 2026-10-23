@@ -37,6 +37,7 @@ public class Bug_Manager : MonoBehaviour, IPointerClickHandler
         if (collision == GetComponent<Steering_Controller>().GetTarget())
         {
             // do stuff
+            collision.GetComponent<Object_Manager_Rottable>().Damage(this);
         }
     }
 

@@ -140,9 +140,8 @@ public class Object_Manager_Rottable : Object_Manager_Base
         }
     }
 
-    override public void OnCollisionEnter2D(Collision2D collision)
+    public void Damage(Bug_Manager bug)
     {
-        Bug_Manager bug = collision.gameObject.GetComponent<Bug_Manager>();
         if (bug == null) return;
 
         TransitionBugToWalk(bug.gameObject);
@@ -153,23 +152,28 @@ public class Object_Manager_Rottable : Object_Manager_Base
         }
     }
 
+    override public void OnCollisionEnter2D(Collision2D collision)
+    {
+        //Damage()
+    }
+
     public void OnCollisionStay2D(Collision2D collision)
     {
-        Bug_Manager bug = collision.gameObject.GetComponent<Bug_Manager>();
+        /*Bug_Manager bug = collision.gameObject.GetComponent<Bug_Manager>();
         if (bug == null) return; 
 
         if (bug.CausesDamage())
         {
             CheckRot(bug.GetContinuousDamage());
-        }
+        }*/
     }
 
     override public void OnCollisionExit2D(Collision2D collision)
     {
-        Bug_Manager bug = collision.gameObject.GetComponent<Bug_Manager>();
+        /*Bug_Manager bug = collision.gameObject.GetComponent<Bug_Manager>();
         if (bug == null) return;
 
-        TransitionBugToFly(bug.gameObject);
+        TransitionBugToFly(bug.gameObject);*/
     }
 
     #endregion
