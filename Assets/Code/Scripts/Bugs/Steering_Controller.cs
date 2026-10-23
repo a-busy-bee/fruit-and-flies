@@ -55,11 +55,16 @@ public class Steering_Controller : MonoBehaviour
 		}
 
 		// clamp so they don't go crazy
-		totalSteeringForce = Vector3.ClampMagnitude(totalSteeringForce, bugInfo.maxForce);
+		float maxForce = bugInfo.maxForce;
+		if (targetReached) maxForce /= 4.0f;
+		totalSteeringForce = Vector3.ClampMagnitude(totalSteeringForce, maxForce);
 
 		// math 
 		Vector3 acceleration = totalSteeringForce / bugInfo.mass;
 		velocity += acceleration * Time.deltaTime;
+
+		//float maxVelocity = bugInfo.maxVelocity;
+		//if (targetReached) maxVelocity /= 4;
 		velocity = Vector3.ClampMagnitude(velocity, bugInfo.maxVelocity);
 
 		GetComponent<Bug_Manager>().CheckFlipSprite(velocity);
@@ -82,10 +87,10 @@ public class Steering_Controller : MonoBehaviour
 		yield return new WaitForSeconds(3);
 
 		// high chance to stay on this object, but choose diff location
-		float chanceToStay = Random.Range(0.0f, 1.0f);
+		//float chanceToStay = Random.Range(0.0f, 1.0f);
 
 		// if roll is < 0.4, get new object
-		if (chanceToStay < 0.7f) currTargetObj = LevelManager.instance.GetRandomObject();
+		/*if (chanceToStay < 0.7f) currTargetObj = LevelManager.instance.GetRandomObject();
 
 		// choose new target pos
 		if (currTargetObj != null)
@@ -102,7 +107,13 @@ public class Steering_Controller : MonoBehaviour
 		{
 			currTargetPos = LevelManager.instance.GetRandomPointInAir();
 			currTargetObj = null;
+		}*/
+
+		if (currTargetObj == null)
+		{
+			currTargetObj = LevelManager.instance.GetRandomObject();
 		}
+		currTargetPos = currTargetObj.GetComponent<Object_Manager_Base>().GetRandomPointOnObj();
 
 		foreach (BehaviorWeightPair behavior in behaviors)
 		{
