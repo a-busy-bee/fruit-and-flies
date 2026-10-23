@@ -20,6 +20,7 @@ MonoBehaviour:
   slowingRadius: 1
   wanderCircleDistance: {x: 0.8, y: 0, z: 0}
   wanderCircleRadius: 4
-  maxForce: 15
-  maxFleeForce: 15
+  maxForce: 35
+  maxFleeForce: 35
+  fleeingRadius: 5
   mass: 1

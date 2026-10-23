@@ -3,11 +3,10 @@ using UnityEngine.InputSystem;
 
 public class Behavior_Flee : Behavior
 {
-    private float MOUSE_DIST_THRESHOLD = 10;
     override public Vector3 CalculateForce(Steering_Controller controller)
     {
         target = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
-        if (Vector2.Distance((Vector2)target, (Vector2)transform.position) > MOUSE_DIST_THRESHOLD)
+        if (Vector2.Distance((Vector2)target, (Vector2)transform.position) > controller.GetBugFleeingRadius())
         {
             return Vector3.zero;
         }

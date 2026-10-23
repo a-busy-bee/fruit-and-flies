@@ -184,7 +184,7 @@ MonoBehaviour:
   - behavior: {fileID: 3963863907822460402}
     weight: 0.2
   - behavior: {fileID: 991105060643523591}
-    weight: 0
+    weight: 0.8
   - behavior: {fileID: 8843499755870487584}
     weight: 0.2
 --- !u!114 &8484634333532291298

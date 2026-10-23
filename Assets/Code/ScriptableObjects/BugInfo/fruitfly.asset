@@ -22,4 +22,5 @@ MonoBehaviour:
   wanderCircleRadius: 4
   maxForce: 10
   maxFleeForce: 10
+  fleeingRadius: 10
   mass: 0.5
