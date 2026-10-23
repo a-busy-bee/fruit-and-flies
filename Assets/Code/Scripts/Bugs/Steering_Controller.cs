@@ -41,35 +41,7 @@ public class Steering_Controller : MonoBehaviour
 
 	public void TargetReached()
 	{
-		// high chance to stay on this object, but choose diff location
-		float chanceToStay = Random.Range(0.0f, 1.0f);
-
-		// if roll is < 0.4, get new object
-		if (chanceToStay < 0.7f) currTargetObj = LevelManager.instance.GetRandomObject();
-
-		// choose new target pos
-		if (currTargetObj != null)
-		{
-			currTargetPos = currTargetObj.GetComponent<Object_Manager_Base>().GetRandomPointOnObj();
-		}
-		else
-		{
-			currTargetPos = LevelManager.instance.GetRandomPointInAir();
-		}
-
-		// if 0.2 < roll < 0.4, choose target in the sky instead
-		if (chanceToStay < 0.25f)
-		{
-			currTargetPos = LevelManager.instance.GetRandomPointInAir();
-			currTargetObj = null;
-		}
-
-		foreach (BehaviorWeightPair behavior in behaviors)
-		{
-			behavior.behavior.SetNewTarget(currTargetPos);
-		}
-
-		StartCoroutine(WaitBeforeResettingTargetReached());
+		StartCoroutine(WaitThenTargetReached());
 	}
 
 	private void Update()
@@ -103,6 +75,41 @@ public class Steering_Controller : MonoBehaviour
 			TargetReached();
 		}
 		
+	}
+
+	private IEnumerator WaitThenTargetReached()
+	{
+		yield return new WaitForSeconds(3);
+
+		// high chance to stay on this object, but choose diff location
+		float chanceToStay = Random.Range(0.0f, 1.0f);
+
+		// if roll is < 0.4, get new object
+		if (chanceToStay < 0.7f) currTargetObj = LevelManager.instance.GetRandomObject();
+
+		// choose new target pos
+		if (currTargetObj != null)
+		{
+			currTargetPos = currTargetObj.GetComponent<Object_Manager_Base>().GetRandomPointOnObj();
+		}
+		else
+		{
+			currTargetPos = LevelManager.instance.GetRandomPointInAir();
+		}
+
+		// if 0.2 < roll < 0.4, choose target in the sky instead
+		if (chanceToStay < 0.25f)
+		{
+			currTargetPos = LevelManager.instance.GetRandomPointInAir();
+			currTargetObj = null;
+		}
+
+		foreach (BehaviorWeightPair behavior in behaviors)
+		{
+			behavior.behavior.SetNewTarget(currTargetPos);
+		}
+
+		StartCoroutine(WaitBeforeResettingTargetReached());
 	}
 
 	private IEnumerator WaitBeforeResettingTargetReached()
