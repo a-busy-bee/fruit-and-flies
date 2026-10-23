@@ -128,6 +128,10 @@ public class Steering_Controller : MonoBehaviour
 	{
 		return bugInfo.wanderCircleRadius;
 	}
+	public float GetBugFleeingRadius()
+	{
+		return bugInfo.fleeingRadius;
+	}
 	public Vector3 GetVelocity()
 	{
 		return velocity;
