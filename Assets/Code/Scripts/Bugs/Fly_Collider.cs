@@ -3,11 +3,13 @@ using UnityEngine;
 public class Fly_Collider : MonoBehaviour
 {
 
-	public void OnCollisionEnter(Collision collision)
+	public void OnTriggerEnter(Collider collision)
 	{
-		if (collision.gameObject.GetComponent<Object_Manager_Rottable>())
+		Debug.Log("ouchie");
+		if (collision.gameObject.TryGetComponent<Object_Manager_Rottable>(out Object_Manager_Rottable objManager))
         {
-            transform.parent.gameObject.GetComponent<Bug_Manager>().CheckDamage(collision.gameObject);
+			Debug.Log("ouchie more");
+            transform.parent.gameObject.GetComponent<Bug_Manager>().CheckDamage(objManager.gameObject);
         }
 	}
 }
