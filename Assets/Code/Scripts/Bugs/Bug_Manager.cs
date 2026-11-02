@@ -37,6 +37,7 @@ public class Bug_Manager : MonoBehaviour, IPointerClickHandler
         if (collision == GetComponent<Steering_Controller>().GetTarget())
         {
             // do stuff
+            collision.GetComponent<Object_Manager_Rottable>().Damage(this);
         }
     }
 
@@ -55,13 +56,11 @@ public class Bug_Manager : MonoBehaviour, IPointerClickHandler
         if (!isDead)
         {
             Rigidbody2D rb = gameObject.AddComponent<Rigidbody2D>();
+            GetComponent<CircleCollider2D>().enabled = false;
 
             rb.mass = 2f;
-            isDead = true;
+            isDead = true;  
         }
-
-
-       
     }
 
     public void CheckFlipSprite(Vector3 velocity)

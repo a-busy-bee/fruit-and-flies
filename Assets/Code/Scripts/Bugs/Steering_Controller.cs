@@ -41,11 +41,60 @@ public class Steering_Controller : MonoBehaviour
 
 	public void TargetReached()
 	{
+		StartCoroutine(WaitThenTargetReached());
+	}
+
+	private void Update()
+	{
+		Vector3 totalSteeringForce = Vector3.zero;
+
+		// add up all of the behavior steering forces
+		bool isFleeing = false;
+		foreach (BehaviorWeightPair behavior in behaviors)
+		{
+			Vector3 force = behavior.behavior.CalculateForce(this) * behavior.weight;
+			if (behavior.behavior.IsFleeing() && force != Vector3.zero) isFleeing = true;
+			totalSteeringForce += force;
+		}
+
+		// clamp so they don't go crazy
+		float maxForce = bugInfo.maxForce;
+		if (targetReached) maxForce /= 4.0f;
+		if (isFleeing) maxForce = bugInfo.maxForce * 2f;
+		totalSteeringForce = Vector3.ClampMagnitude(totalSteeringForce, maxForce);
+
+		// math 
+		Vector3 acceleration = totalSteeringForce / bugInfo.mass;
+		velocity += acceleration * Time.deltaTime;
+
+		//float maxVelocity = bugInfo.maxVelocity;
+		//if (targetReached) maxVelocity /= 4;
+		velocity = Vector3.ClampMagnitude(velocity, bugInfo.maxVelocity);
+
+		GetComponent<Bug_Manager>().CheckFlipSprite(velocity);
+
+		// update position
+		Vector3 newPos = transform.position + velocity * Time.deltaTime;
+		transform.position = new Vector3(newPos.x, newPos.y, -5);
+
+		// check if position is close enough to the target
+		if (!targetReached && Vector2.Distance((Vector2)transform.position, (Vector2)currTargetPos) <= TARGET_DIST_THRESHOLD)
+		{
+			targetReached = true;
+			TargetReached();
+		}
+		
+	}
+
+	private IEnumerator WaitThenTargetReached()
+	{
+		yield return new WaitForSeconds(3);
+
 		// high chance to stay on this object, but choose diff location
-		float chanceToStay = Random.Range(0.0f, 1.0f);
+		//float chanceToStay = Random.Range(0.0f, 1.0f);
 
 		// if roll is < 0.4, get new object
-		if (chanceToStay < 0.7f) currTargetObj = LevelManager.instance.GetRandomObject();
+		/*if (chanceToStay < 0.7f) currTargetObj = LevelManager.instance.GetRandomObject();
 
 		// choose new target pos
 		if (currTargetObj != null)
@@ -62,7 +111,13 @@ public class Steering_Controller : MonoBehaviour
 		{
 			currTargetPos = LevelManager.instance.GetRandomPointInAir();
 			currTargetObj = null;
+		}*/
+
+		if (currTargetObj == null)
+		{
+			currTargetObj = LevelManager.instance.GetRandomObject();
 		}
+		currTargetPos = currTargetObj.GetComponent<Object_Manager_Base>().GetRandomPointOnObj();
 
 		foreach (BehaviorWeightPair behavior in behaviors)
 		{
@@ -70,39 +125,6 @@ public class Steering_Controller : MonoBehaviour
 		}
 
 		StartCoroutine(WaitBeforeResettingTargetReached());
-	}
-
-	private void Update()
-	{
-		Vector3 totalSteeringForce = Vector3.zero;
-
-		// add up all of the behavior steering forces
-		foreach (BehaviorWeightPair behavior in behaviors)
-		{
-			totalSteeringForce += behavior.behavior.CalculateForce(this) * behavior.weight;
-		}
-
-		// clamp so they don't go crazy
-		totalSteeringForce = Vector3.ClampMagnitude(totalSteeringForce, bugInfo.maxForce);
-
-		// math 
-		Vector3 acceleration = totalSteeringForce / bugInfo.mass;
-		velocity += acceleration * Time.deltaTime;
-		velocity = Vector3.ClampMagnitude(velocity, bugInfo.maxVelocity);
-
-		GetComponent<Bug_Manager>().CheckFlipSprite(velocity);
-
-		// update position
-		Vector3 newPos = transform.position + velocity * Time.deltaTime;
-		transform.position = new Vector3(newPos.x, newPos.y, -5);
-
-		// check if position is close enough to the target
-		if (!targetReached && Vector2.Distance((Vector2)transform.position, (Vector2)currTargetPos) <= TARGET_DIST_THRESHOLD)
-		{
-			targetReached = true;
-			TargetReached();
-		}
-		
 	}
 
 	private IEnumerator WaitBeforeResettingTargetReached()
