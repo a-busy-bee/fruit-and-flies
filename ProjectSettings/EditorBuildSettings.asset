@@ -21,7 +21,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Anger.unity
     guid: 42ed270f4f8d047f8a961fa0cd9557d4
   - enabled: 1
-    path: Assets/Scenes/Bargaining.unity
+    path: Assets/Scenes/Breakfast.unity
     guid: 7146ba66d9146459baecb015157688e6
   - enabled: 1
     path: Assets/Scenes/Denial.unity
