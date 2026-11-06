@@ -21,7 +21,7 @@ public class MenuManager : MonoBehaviour
         int prevLevel = PlayerPrefs.GetInt("PrevLevel");
         int currLevel = PlayerPrefs.GetInt("CurrLevel");
 
-        if (prevLevel < currLevel)
+        if (prevLevel < currLevel || currLevel == 0)
         {
             // play calendar page flip anim
             levelPageAnimator.SetTrigger("Flip");
