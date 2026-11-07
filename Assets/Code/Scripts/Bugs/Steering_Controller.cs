@@ -18,12 +18,17 @@ public class BehaviorWeightPair
 public class Steering_Controller : MonoBehaviour
 {
 	[SerializeField] private BehaviorWeightPair[] behaviors;
+	[SerializeField] private Rigidbody2D rigidbody;
+	private const float TARGET_DIST_THRESHOLD = 5;
+	private const float ROT_FORCE_MIN = 10f;
+	private const float ROT_FORCE_MAX = 15f;
+	private List<float> behaviorWeights = new List<float>(); 
 	private Bug_Info bugInfo;
 	private Vector3 velocity = Vector3.zero;
 	private GameObject currTargetObj;
 	private Vector3 currTargetPos;
-	private const float TARGET_DIST_THRESHOLD = 10;
 	private bool targetReached = false;
+	private bool pauseBehaviors = false;
 
 	private void Start()
 	{
@@ -34,18 +39,16 @@ public class Steering_Controller : MonoBehaviour
 		foreach (BehaviorWeightPair behavior in behaviors)
 		{
 			behavior.behavior.SetNewTarget(currTargetPos);
+			behaviorWeights.Add(behavior.weight);
 		}
 
 		Debug.Log(currTargetPos);
 	}
 
-	public void TargetReached()
-	{
-		StartCoroutine(WaitThenTargetReached());
-	}
-
 	private void Update()
 	{
+		if (pauseBehaviors) return;
+
 		Vector3 totalSteeringForce = Vector3.zero;
 
 		// add up all of the behavior steering forces
@@ -76,42 +79,30 @@ public class Steering_Controller : MonoBehaviour
 		// update position
 		Vector3 newPos = transform.position + velocity * Time.deltaTime;
 		transform.position = new Vector3(newPos.x, newPos.y, -5);
+	}
 
+	#region Flying Steering Behaviors
+	public void TargetReached()
+	{
+		StartCoroutine(WaitThenTargetReached());
+	}
+
+	public bool CheckTargetReached()
+	{
 		// check if position is close enough to the target
 		if (!targetReached && Vector2.Distance((Vector2)transform.position, (Vector2)currTargetPos) <= TARGET_DIST_THRESHOLD)
 		{
 			targetReached = true;
 			TargetReached();
+			return true;
 		}
-		
+
+		return false;
 	}
 
 	private IEnumerator WaitThenTargetReached()
 	{
 		yield return new WaitForSeconds(3);
-
-		// high chance to stay on this object, but choose diff location
-		//float chanceToStay = Random.Range(0.0f, 1.0f);
-
-		// if roll is < 0.4, get new object
-		/*if (chanceToStay < 0.7f) currTargetObj = LevelManager.instance.GetRandomObject();
-
-		// choose new target pos
-		if (currTargetObj != null)
-		{
-			currTargetPos = currTargetObj.GetComponent<Object_Manager_Base>().GetRandomPointOnObj();
-		}
-		else
-		{
-			currTargetPos = LevelManager.instance.GetRandomPointInAir();
-		}
-
-		// if 0.2 < roll < 0.4, choose target in the sky instead
-		if (chanceToStay < 0.25f)
-		{
-			currTargetPos = LevelManager.instance.GetRandomPointInAir();
-			currTargetObj = null;
-		}*/
 
 		if (currTargetObj == null)
 		{
@@ -133,6 +124,51 @@ public class Steering_Controller : MonoBehaviour
 
 		targetReached = false;
 	}
+
+	public void PauseSteeringBehaviors()
+	{
+		pauseBehaviors = true;
+		foreach (BehaviorWeightPair pair in behaviors)
+		{
+			pair.weight = 0;
+		}
+	}
+
+	public void RestoreSteeringBehaviors()
+	{
+		pauseBehaviors = false;
+		for (int i = 0; i < behaviors.Length; i++)
+		{
+			behaviors[i].weight = behaviorWeights[i];
+		}
+	}
+
+	#endregion
+
+	#region Landed Steering Behaviors
+	public void StartLandedBehaviors()
+	{
+		StartCoroutine(LandedBehavior());
+	}
+
+	private IEnumerator LandedBehavior()
+	{
+		int cycles = Random.Range(1, 5);
+
+		for (int i = 0; i < cycles; i++)
+		{
+			yield return new WaitForSeconds(Random.Range(0f, 1f));
+
+			// apply random force to the z-axis to rotate the fly
+			float zForce = Random.Range(ROT_FORCE_MIN, ROT_FORCE_MAX);
+
+			rigidbody.AddTorque(zForce, ForceMode2D.Impulse);
+		}
+	}
+
+	#endregion
+
+	#region Getters
 
 	public float GetBugMaxVelocity()
 	{
@@ -162,4 +198,6 @@ public class Steering_Controller : MonoBehaviour
 	{
 		return currTargetObj;
 	}
+
+	#endregion
 }

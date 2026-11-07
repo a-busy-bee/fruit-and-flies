@@ -96,10 +96,6 @@ public class Object_Manager_Rottable : Object_Manager_Base
         CheckRot(damageDebuff);
     }
 
-    private void AddDamageDebuff(float dmg)
-    {
-        damageDebuff += dmg;
-    }
 
     #region Debug/Demo
 
@@ -140,42 +136,15 @@ public class Object_Manager_Rottable : Object_Manager_Base
         }
     }
 
-    public void Damage(Bug_Manager bug)
+    public void ContactDamage(Bug_Info bugInfo)
     {
-        if (bug == null) return;
+        float initDamage = bugInfo.initialDamage;
+        float contDamage = bugInfo.continuousDamage; // TODO: figure out cont damage
+        float debuffDamage = bugInfo.damageDebuff;   // TODO: figure out debuff damage
 
-        TransitionBugToWalk(bug.gameObject);
-        if (bug.CausesDamage())
-        {
-            CheckRot(bug.GetInitialDamage());
-            AddDamageDebuff(bug.GetDamageDebuff());
-        }
+        CheckRot(initDamage);
     }
-
-    override public void OnCollisionEnter2D(Collision2D collision)
-    {
-        //Damage()
-    }
-
-    public void OnCollisionStay2D(Collision2D collision)
-    {
-        /*Bug_Manager bug = collision.gameObject.GetComponent<Bug_Manager>();
-        if (bug == null) return; 
-
-        if (bug.CausesDamage())
-        {
-            CheckRot(bug.GetContinuousDamage());
-        }*/
-    }
-
-    override public void OnCollisionExit2D(Collision2D collision)
-    {
-        /*Bug_Manager bug = collision.gameObject.GetComponent<Bug_Manager>();
-        if (bug == null) return;
-
-        TransitionBugToFly(bug.gameObject);*/
-    }
-
+    //halo a ghraidh ciamar a tha thu an-diugh? Tha thusa boidheach ;))
     #endregion
 
     #region Helpers & IEnumerators
