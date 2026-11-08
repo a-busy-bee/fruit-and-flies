@@ -29,6 +29,8 @@ public class MenuManager : MonoBehaviour
             // reveal button
             levelButtons[currLevel].SetActive(true);
         }
+
+        AudioManager.instance.SwitchTheme(AudioManager.MusicType.baseTheme);
     }
 
     public void OnStart()
@@ -60,19 +62,9 @@ public class MenuManager : MonoBehaviour
         SceneManager.LoadScene("Tutorial");
     }
 
-    public void LoadAnger()
-    {
-        SceneManager.LoadScene("Anger");
-    }
-
     public void LoadBargaining()
     {
         SceneManager.LoadScene("Bargaining");
-    }
-
-    public void LoadDenial()
-    {
-        SceneManager.LoadScene("Denial");
     }
 
     public void LoadDepression()

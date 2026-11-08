@@ -2510,6 +2510,26 @@ MonoBehaviour:
     volume: 1
     source: {fileID: 0}
     type: 0
+  - clip: {fileID: 8300000, guid: 6fc362d41828c4fe2bd298e291fde124, type: 3}
+    loop: 1
+    volume: 1
+    source: {fileID: 0}
+    type: 1
+  - clip: {fileID: 8300000, guid: 991208987bacb411d9f65f6dce4e3b7a, type: 3}
+    loop: 1
+    volume: 1
+    source: {fileID: 0}
+    type: 2
+  - clip: {fileID: 8300000, guid: b10f0631c1d1d42a38e4c30c20df78ed, type: 3}
+    loop: 1
+    volume: 1
+    source: {fileID: 0}
+    type: 3
+  - clip: {fileID: 8300000, guid: 582ae0d6575e04121aef0c019897316f, type: 3}
+    loop: 1
+    volume: 1
+    source: {fileID: 0}
+    type: 4
   themeSource: {fileID: 429534668}
   nextThemeSource: {fileID: 1409364045}
   audioMixer: {fileID: 24100000, guid: 2437c702f2edc4b38ac847e273e405d4, type: 2}

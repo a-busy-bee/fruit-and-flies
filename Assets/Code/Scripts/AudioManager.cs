@@ -32,7 +32,11 @@ public class AudioManager : MonoBehaviour
 
     public enum MusicType
     {
-        baseTheme
+        baseTheme,  // menu 
+        tutorial,   // summer i guess 
+        breakfast,  // 
+        dinner,     // trip hop
+        midnight    // winter midnight rough complete
     }
     public enum SoundType
     {
