@@ -2504,7 +2504,12 @@ MonoBehaviour:
     volume: 0.2
     source: {fileID: 0}
     type: 4
-  themes: []
+  themes:
+  - clip: {fileID: 8300000, guid: 991208987bacb411d9f65f6dce4e3b7a, type: 3}
+    loop: 1
+    volume: 1
+    source: {fileID: 0}
+    type: 0
   themeSource: {fileID: 429534668}
   nextThemeSource: {fileID: 1409364045}
   audioMixer: {fileID: 24100000, guid: 2437c702f2edc4b38ac847e273e405d4, type: 2}
