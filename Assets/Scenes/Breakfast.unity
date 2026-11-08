@@ -15460,7 +15460,6 @@ GameObject:
   - component: {fileID: 519420030}
   - component: {fileID: 519420033}
   - component: {fileID: 519420034}
-  - component: {fileID: 519420035}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -15637,33 +15636,35 @@ MonoBehaviour:
     volume: 0.2
     source: {fileID: 0}
     type: 4
-  themes: []
+  themes:
+  - clip: {fileID: 8300000, guid: 991208987bacb411d9f65f6dce4e3b7a, type: 3}
+    loop: 1
+    volume: 1
+    source: {fileID: 0}
+    type: 0
+  - clip: {fileID: 8300000, guid: 6fc362d41828c4fe2bd298e291fde124, type: 3}
+    loop: 1
+    volume: 1
+    source: {fileID: 0}
+    type: 1
+  - clip: {fileID: 8300000, guid: 991208987bacb411d9f65f6dce4e3b7a, type: 3}
+    loop: 1
+    volume: 1
+    source: {fileID: 0}
+    type: 2
+  - clip: {fileID: 8300000, guid: b10f0631c1d1d42a38e4c30c20df78ed, type: 3}
+    loop: 1
+    volume: 1
+    source: {fileID: 0}
+    type: 3
+  - clip: {fileID: 8300000, guid: 582ae0d6575e04121aef0c019897316f, type: 3}
+    loop: 1
+    volume: 1
+    source: {fileID: 0}
+    type: 4
   themeSource: {fileID: 1246038225}
   nextThemeSource: {fileID: 2104410089}
   audioMixer: {fileID: 24100000, guid: 2437c702f2edc4b38ac847e273e405d4, type: 2}
---- !u!114 &519420035
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519420028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 930fd60e6efb6448885b27f9ff81356b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::LevelManager
-  objects:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!1 &522029653
 GameObject:
   m_ObjectHideFlags: 0
@@ -16157,6 +16158,67 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 923291100}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &618714536
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 618714538}
+  - component: {fileID: 618714537}
+  m_Layer: 0
+  m_Name: LEVELMANAGER
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &618714537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 618714536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 930fd60e6efb6448885b27f9ff81356b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LevelManager
+  objects:
+  - {fileID: 2016547916}
+  - {fileID: 676934612}
+  - {fileID: 2045997347}
+  - {fileID: 946855290}
+  - {fileID: 700745094}
+  - {fileID: 1570029678}
+  - {fileID: 1361510538}
+  - {fileID: 923291099}
+  - {fileID: 106337605}
+  - {fileID: 2060177670}
+  - {fileID: 437441973}
+  - {fileID: 887747271}
+  - {fileID: 1728483230}
+  - {fileID: 644858787}
+  - {fileID: 1490620393}
+  - {fileID: 801047333}
+--- !u!4 &618714538
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 618714536}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 8.39297, y: 2.22325, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &619394800
 GameObject:
@@ -85885,6 +85947,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 519420032}
+  - {fileID: 618714538}
   - {fileID: 619394802}
   - {fileID: 1291065541}
   - {fileID: 2016547915}
