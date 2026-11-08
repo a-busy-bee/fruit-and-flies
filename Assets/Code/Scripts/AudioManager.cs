@@ -32,7 +32,11 @@ public class AudioManager : MonoBehaviour
 
     public enum MusicType
     {
-        baseTheme
+        baseTheme,  // menu 
+        tutorial,   // summer i guess 
+        breakfast,  // 
+        dinner,     // trip hop
+        midnight    // winter midnight rough complete
     }
     public enum SoundType
     {
@@ -79,14 +83,7 @@ public class AudioManager : MonoBehaviour
 
     private void Start()
     {
-        /*float masterVol = SaveManager.instance.GetSettings_VolumeMaster();
-        float musicVol = SaveManager.instance.GetSettings_VolumeMusic();
-        float sfxVol = SaveManager.instance.GetSettings_VolumeSFX();
-        ChangeVolume(AudioSlider.VolumeType.Master, masterVol);
-        ChangeVolume(AudioSlider.VolumeType.Music, musicVol);
-        ChangeVolume(AudioSlider.VolumeType.SFX, sfxVol);*/
-
-        //SetTheme(MusicType.baseTheme);
+        SetTheme(MusicType.baseTheme);
     }
 
     #region SFX

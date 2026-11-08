@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e025391f86a54e36815cebb5629e12a, type: 3}
   m_Name: bigFly
   m_EditorClassIdentifier: Assembly-CSharp::Bug_Info
+  landedSprite: {fileID: -4152232645653616291, guid: 385870672677f469cac0ff3316a8bc2b, type: 3}
+  flyingSprite: {fileID: -946863473, guid: 385870672677f469cac0ff3316a8bc2b, type: 3}
   causesDamage: 0
   initialDamage: 1
   continuousDamage: 0.1

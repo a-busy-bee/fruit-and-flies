@@ -3920,7 +3920,6 @@ GameObject:
   - component: {fileID: 519420030}
   - component: {fileID: 519420033}
   - component: {fileID: 519420034}
-  - component: {fileID: 519420035}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -4101,29 +4100,6 @@ MonoBehaviour:
   themeSource: {fileID: 1246038225}
   nextThemeSource: {fileID: 2104410089}
   audioMixer: {fileID: 24100000, guid: 2437c702f2edc4b38ac847e273e405d4, type: 2}
---- !u!114 &519420035
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519420028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 930fd60e6efb6448885b27f9ff81356b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::LevelManager
-  objects:
-  - {fileID: 2099466100}
-  - {fileID: 272372954}
-  - {fileID: 516546181}
-  - {fileID: 622260013}
-  - {fileID: 79406193}
-  - {fileID: 228324558}
-  - {fileID: 7683388582049994323}
-  - {fileID: 1296317610}
-  - {fileID: 1696352465}
-  - {fileID: 945396212}
 --- !u!1 &528766930
 GameObject:
   m_ObjectHideFlags: 0
@@ -4320,6 +4296,7 @@ MonoBehaviour:
     weight: 0.2
   - behavior: {fileID: 564397712}
     weight: 0
+  rigidbody: {fileID: 0}
 --- !u!114 &564397716
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10888,6 +10865,7 @@ MonoBehaviour:
     weight: 0.2
   - behavior: {fileID: 992880240}
     weight: 0
+  rigidbody: {fileID: 0}
 --- !u!114 &992880244
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17520,6 +17498,7 @@ MonoBehaviour:
     weight: 0.2
   - behavior: {fileID: 1136673961}
     weight: 0
+  rigidbody: {fileID: 0}
 --- !u!114 &1136673965
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18115,6 +18094,7 @@ MonoBehaviour:
     weight: 0.2
   - behavior: {fileID: 1265374034}
     weight: 0
+  rigidbody: {fileID: 0}
 --- !u!114 &1265374038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23795,6 +23775,7 @@ MonoBehaviour:
     weight: 0.2
   - behavior: {fileID: 1649846831}
     weight: 0
+  rigidbody: {fileID: 0}
 --- !u!114 &1649846835
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42902,6 +42883,61 @@ Transform:
   - {fileID: 1696352463}
   m_Father: {fileID: 1019714041}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1803404401
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1803404403}
+  - component: {fileID: 1803404402}
+  m_Layer: 0
+  m_Name: LEVELMANAGER
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1803404402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1803404401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 930fd60e6efb6448885b27f9ff81356b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LevelManager
+  objects:
+  - {fileID: 2099466100}
+  - {fileID: 272372954}
+  - {fileID: 516546181}
+  - {fileID: 622260013}
+  - {fileID: 79406193}
+  - {fileID: 228324558}
+  - {fileID: 7683388582049994323}
+  - {fileID: 1296317610}
+  - {fileID: 1696352465}
+  - {fileID: 945396212}
+--- !u!4 &1803404403
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1803404401}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 8.39297, y: 2.22325, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1807891305
 GameObject:
   m_ObjectHideFlags: 0
@@ -44536,6 +44572,7 @@ MonoBehaviour:
     weight: 0.2
   - behavior: {fileID: 1901800096}
     weight: 0
+  rigidbody: {fileID: 0}
 --- !u!114 &1901800100
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44701,6 +44738,7 @@ MonoBehaviour:
     weight: 0.2
   - behavior: {fileID: 1932974248}
     weight: 0
+  rigidbody: {fileID: 0}
 --- !u!114 &1932974252
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45052,6 +45090,7 @@ MonoBehaviour:
     weight: 0.2
   - behavior: {fileID: 2067294004}
     weight: 0
+  rigidbody: {fileID: 0}
 --- !u!114 &2067294008
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49516,6 +49555,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 519420032}
+  - {fileID: 1803404403}
   - {fileID: 619394802}
   - {fileID: 1291065541}
   - {fileID: 1019714041}
