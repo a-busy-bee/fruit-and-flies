@@ -34,6 +34,7 @@ public class LevelManager : MonoBehaviour
 
     private void Start()
     {
+        Debug.Log("start");
         string sceneName = SceneManager.GetActiveScene().name;
         Debug.Log(sceneName);
 
