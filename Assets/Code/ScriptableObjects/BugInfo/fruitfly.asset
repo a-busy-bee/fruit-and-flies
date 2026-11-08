@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e025391f86a54e36815cebb5629e12a, type: 3}
   m_Name: fruitfly
   m_EditorClassIdentifier: Assembly-CSharp::Bug_Info
+  landedSprite: {fileID: 1876613870, guid: fb7f3ded4ae8d4088a84ad5661f91fe6, type: 3}
+  flyingSprite: {fileID: -4152232645653616291, guid: fb7f3ded4ae8d4088a84ad5661f91fe6, type: 3}
   causesDamage: 0
   initialDamage: 0.5
   continuousDamage: 0.1

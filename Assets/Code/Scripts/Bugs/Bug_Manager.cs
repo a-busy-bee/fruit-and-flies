@@ -5,43 +5,15 @@ public class Bug_Manager : MonoBehaviour, IPointerClickHandler
 {
     [SerializeField] private Bug_Info bugInfo;
     private SpriteRenderer spriteRenderer;
+    private Steering_Controller steeringController;
     private bool isDead;
+    private bool isLanded;
 
     private void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
+        steeringController = GetComponent<Steering_Controller>();
     }
-
-    #region Damage
-    public bool CausesDamage()
-    {
-        return bugInfo.causesDamage;
-    }
-    public float GetInitialDamage()
-    {
-        return bugInfo.initialDamage;
-    }
-
-    public float GetContinuousDamage()
-    {
-        return bugInfo.continuousDamage;
-    }
-
-    public float GetDamageDebuff()
-    {
-        return bugInfo.damageDebuff;
-    }
-
-    public void CheckDamage(GameObject collision)
-    {
-        if (collision == GetComponent<Steering_Controller>().GetTarget())
-        {
-            // do stuff
-            collision.GetComponent<Object_Manager_Rottable>().Damage(this);
-        }
-    }
-
-    #endregion
 
     public Bug_Info GetBugInfo()
     {
@@ -50,7 +22,6 @@ public class Bug_Manager : MonoBehaviour, IPointerClickHandler
 
 	public void OnPointerClick(PointerEventData data)
     {
-        Debug.Log("hit");
         // death
 
         if (!isDead)
@@ -73,5 +44,27 @@ public class Bug_Manager : MonoBehaviour, IPointerClickHandler
         {
             spriteRenderer.flipX = true;
         }
+    }
+
+    public void Land()
+    {
+        if (!isLanded)
+        {
+            // update sprite
+            spriteRenderer.sprite = bugInfo.landedSprite;
+
+            // turn off steering behavior
+            steeringController.PauseSteeringBehaviors();
+
+            // turn on small movement behaviors
+            steeringController.StartLandedBehaviors();
+        }
+    }
+
+    public void Fly()
+    {
+        isLanded = false;
+
+        spriteRenderer.sprite = bugInfo.flyingSprite;
     }
 }

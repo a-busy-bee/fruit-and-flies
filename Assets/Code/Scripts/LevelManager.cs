@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
@@ -29,5 +30,33 @@ public class LevelManager : MonoBehaviour
         {
             instance = this;
         }
+    }
+
+    private void Start()
+    {
+        Debug.Log("start");
+        string sceneName = SceneManager.GetActiveScene().name;
+        Debug.Log(sceneName);
+
+        AudioManager.MusicType theme = AudioManager.MusicType.baseTheme;
+
+        switch (sceneName)
+        {
+            case "Tutorial":
+                theme = AudioManager.MusicType.tutorial;
+                break;
+            case "Bargaining":
+                theme = AudioManager.MusicType.breakfast;
+                break;
+            case "Depression":
+                theme = AudioManager.MusicType.dinner;
+                break;
+            case "Acceptance":
+                theme = AudioManager.MusicType.midnight;
+                break;
+        }
+
+        AudioManager.instance.SwitchTheme(theme);
+
     }
 }

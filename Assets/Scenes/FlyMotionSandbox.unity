@@ -292,7 +292,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 169247555}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -323,7 +323,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 185300615}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -542,13 +542,29 @@ PrefabInstance:
       propertyPath: m_Name
       value: quarter (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3327988840934134068, guid: 5f45cd764c30545119222c3d76b03aec, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6685048838156415642, guid: 5f45cd764c30545119222c3d76b03aec, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 6685048838156415642, guid: 5f45cd764c30545119222c3d76b03aec, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6815470597550493425, guid: 5f45cd764c30545119222c3d76b03aec, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7040619173342209221, guid: 5f45cd764c30545119222c3d76b03aec, type: 3}
       propertyPath: m_LocalPosition.z
       value: -3.91
+      objectReference: {fileID: 0}
+    - target: {fileID: 7427279659070308975, guid: 5f45cd764c30545119222c3d76b03aec, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8489271803691225222, guid: 5f45cd764c30545119222c3d76b03aec, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
@@ -709,7 +725,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 401792919}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1065,6 +1081,14 @@ PrefabInstance:
     - target: {fileID: 3327988840934134068, guid: 09b6bccb7dc3e4ae48fe4cd6a471c0b9, type: 3}
       propertyPath: m_Name
       value: object_NotRottable
+      objectReference: {fileID: 0}
+    - target: {fileID: 3327988840934134068, guid: 09b6bccb7dc3e4ae48fe4cd6a471c0b9, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6815470597550493425, guid: 09b6bccb7dc3e4ae48fe4cd6a471c0b9, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6815470597550493425, guid: 09b6bccb7dc3e4ae48fe4cd6a471c0b9, type: 3}
       propertyPath: m_IsActive
@@ -4944,7 +4968,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 700466560}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5145,7 +5169,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1193092265}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5176,7 +5200,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1226771947}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5341,7 +5365,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1553150912}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5372,7 +5396,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1562135014}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5402,6 +5426,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 223198794}
     m_Modifications:
+    - target: {fileID: 229474088013984843, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1255286791362779808, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
       value: 0
@@ -5421,6 +5449,10 @@ PrefabInstance:
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_Name
       value: mold (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6907728403487000167, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5803,6 +5835,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 223198794}
     m_Modifications:
+    - target: {fileID: 229474088013984843, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1255286791362779808, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
       value: 0
@@ -5822,6 +5858,10 @@ PrefabInstance:
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_Name
       value: mold (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6907728403487000167, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5893,7 +5933,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1994129917}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5992,6 +6032,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 223198794}
     m_Modifications:
+    - target: {fileID: 229474088013984843, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1255286791362779808, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
       value: 0
@@ -6011,6 +6055,10 @@ PrefabInstance:
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_Name
       value: mold (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6907728403487000167, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalPosition.x
