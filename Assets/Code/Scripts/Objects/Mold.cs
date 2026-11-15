@@ -3,10 +3,18 @@ using UnityEngine;
 public class Mold : MonoBehaviour
 {
     [SerializeField] private Animator moldAnimator;
+    [SerializeField] private bool debugForceEnableMold;
 
     private void Start()
     {
-        moldAnimator.enabled = false;
+        if (debugForceEnableMold)
+        {
+            moldAnimator.enabled = true;
+        }
+        else
+        {
+            moldAnimator.enabled = false;
+        }
     }
 
     public void GrowMold()
