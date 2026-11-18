@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -32,7 +33,11 @@ public class Bug_Manager : MonoBehaviour, IPointerClickHandler
             GetComponent<CircleCollider2D>().enabled = false;
 
             rb.mass = 2f;
-            isDead = true;  
+            isDead = true; 
+
+            LevelManager.instance.KillFly();
+
+            StartCoroutine(WaitThenDestroy()); 
         }
     }
 
@@ -69,5 +74,12 @@ public class Bug_Manager : MonoBehaviour, IPointerClickHandler
         steeringController.RestoreSteeringBehaviors();
 
         spriteRenderer.sprite = bugInfo.flyingSprite;
+    }
+
+    private IEnumerator WaitThenDestroy()
+    {
+        yield return new WaitForSeconds(3);
+
+        Destroy(gameObject);
     }
 }

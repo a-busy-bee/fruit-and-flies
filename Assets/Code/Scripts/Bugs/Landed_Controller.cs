@@ -1,15 +1,22 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.InputSystem;
 
 
 public class Landed_Controller : MonoBehaviour
 {
+    private Steering_Controller steering_Controller;
     private const float ROT_ANGLE_MAX = 180f;
 	private const float ROT_ANGLE_MIN = -180f;
     private const float ROT_TIME = 0.05f;
     private bool isRotating = false;
     private float currVelocity;
     private float currTargetAngle;
+
+    private void Start()
+    {
+        steering_Controller = GetComponent<Steering_Controller>();
+    }
 
     public void StartLandedBehaviors()
 	{
@@ -36,6 +43,18 @@ public class Landed_Controller : MonoBehaviour
     {
         if (isRotating)
         {
+            // flee if mouse hoves
+            Vector2 target = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
+            if (Vector2.Distance(target, (Vector2)transform.position) < steering_Controller.GetBugFleeingRadius())
+            {
+                isRotating = false;
+                GetComponent<Bug_Manager>().Fly();
+
+                return;
+            }
+
+
+            // otherwise rotate that fly
             // get curr angle
             float angle = transform.eulerAngles.z;
 
@@ -50,5 +69,7 @@ public class Landed_Controller : MonoBehaviour
                 isRotating = false;
             }
         }
+
+        
     }
 }

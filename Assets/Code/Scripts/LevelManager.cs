@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class LevelManager : MonoBehaviour
 {
@@ -13,6 +14,16 @@ public class LevelManager : MonoBehaviour
     private float globalMaxHealth = 0f;
     private float globalCurrHealth = 0f;
     
+
+    // SPAWNING FLIES
+    [SerializeField] private Transform spawnLeft;
+    [SerializeField] private Transform spawnRight;
+    [SerializeField] private GameObject prefabBigFly;
+    [SerializeField] private GameObject prefabFruitFly;
+    private const float maxFlyMultiplier = 1.3f; // multiplier because it affects the formula (which is constant)
+    private int maxFlies = 2; 
+    private int currNumFlies = 0;
+
 
     // FADE TO BLACK
     [SerializeField] private GameObject blackbkg;
@@ -72,7 +83,64 @@ public class LevelManager : MonoBehaviour
         globalRotState = 0f;
         globalCurrHealth = globalMaxHealth;
 
+        // SPAWNING
+        // spawn first batch from the right
+        while (currNumFlies < maxFlies)
+        {
+            Spawn(false);
+        }
+
+        StartCoroutine(IncreaseMaxFlies());
     }
+
+    #region SPAWNING FLIES 
+
+    public void Spawn(bool isLeft)
+    {
+        float chance = Random.Range(0.0f, 1.0f);
+        Transform spawnTarget = isLeft ? spawnLeft : spawnRight; // (condition) ? if true : if false
+        GameObject prefab = (chance < 0.35f) ? prefabBigFly : prefabFruitFly;
+
+        Instantiate(prefab, spawnTarget);
+        currNumFlies++;
+    }
+
+    public void KillFly()
+    {
+        currNumFlies--;
+
+        if (currNumFlies <= 0.5f * maxFlies)
+        {
+            StartCoroutine(SpawnFlies());
+        }
+    }
+
+    private IEnumerator IncreaseMaxFlies()
+    {
+        while (!fading)
+        {
+            yield return new WaitForSeconds(10);
+
+            maxFlies = (int)(maxFlies * maxFlyMultiplier);
+
+            SpawnFlies();
+        }
+    }
+
+    private IEnumerator SpawnFlies()
+    {
+        while (currNumFlies < maxFlies)
+        {
+            float chance = Random.Range(0.0f, 1.0f);
+            bool isLeft = (chance < 0.5f) ? true : false;
+            Spawn(isLeft);
+
+            yield return new WaitForSeconds(Random.Range(0, 3));
+        }
+    }
+
+
+    #endregion
 
     #region OBJECTS
     public GameObject GetRandomObject()

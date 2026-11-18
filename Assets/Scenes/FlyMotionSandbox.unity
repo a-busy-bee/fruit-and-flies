@@ -5087,10 +5087,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: fly (5)
       objectReference: {fileID: 0}
-    - target: {fileID: 5781945391680666512, guid: fd5f23f18f33a4678aefd6f83656ef4f, type: 3}
-      propertyPath: rigidbody
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 9152794152380552124, guid: fd5f23f18f33a4678aefd6f83656ef4f, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.22

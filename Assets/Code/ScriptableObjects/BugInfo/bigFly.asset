@@ -15,7 +15,7 @@ MonoBehaviour:
   landedSprite: {fileID: -4152232645653616291, guid: 385870672677f469cac0ff3316a8bc2b, type: 3}
   flyingSprite: {fileID: -946863473, guid: 385870672677f469cac0ff3316a8bc2b, type: 3}
   causesDamage: 0
-  initialDamage: 1
+  initialDamage: 5
   continuousDamage: 0.1
   damageDebuff: 0.1
   maxVelocity: 20
