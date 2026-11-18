@@ -83,10 +83,12 @@ public class Object_Manager_Rottable : Object_Manager_Base
         // technically this could be cleaner but this way it's more readable
         if (currRotState == ObjectRotState.fresh && currHealth <= 0.7f * objectInfo.maxHealth)
         {
+            LevelManager.instance.ReportNewRot(0.3f * objectInfo.maxHealth);
             SetState(ObjectRotState.transitionToMold);
         }
         else if (currRotState == ObjectRotState.moldy && currHealth <= 0.3f * objectInfo.maxHealth)
         {
+            LevelManager.instance.ReportNewRot(0.4f * objectInfo.maxHealth);
             SetState(ObjectRotState.tranisitionToRot);
         }
     }
@@ -144,7 +146,17 @@ public class Object_Manager_Rottable : Object_Manager_Base
 
         CheckRot(initDamage);
     }
-    //halo a ghraidh ciamar a tha thu an-diugh? Tha thusa boidheach ;))
+    
+    public float GetMaxHealth()
+    {
+        return objectInfo.maxHealth;
+    }
+
+    public float GetCurrHealth()
+    {
+        return currHealth;
+    }
+
     #endregion
 
     #region Helpers & IEnumerators
