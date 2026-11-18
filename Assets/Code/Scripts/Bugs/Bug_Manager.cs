@@ -6,6 +6,7 @@ public class Bug_Manager : MonoBehaviour, IPointerClickHandler
     [SerializeField] private Bug_Info bugInfo;
     private SpriteRenderer spriteRenderer;
     private Steering_Controller steeringController;
+    private Landed_Controller landedController;
     private bool isDead;
     private bool isLanded;
 
@@ -13,6 +14,7 @@ public class Bug_Manager : MonoBehaviour, IPointerClickHandler
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         steeringController = GetComponent<Steering_Controller>();
+        landedController = GetComponent<Landed_Controller>();
     }
 
     public Bug_Info GetBugInfo()
@@ -48,7 +50,7 @@ public class Bug_Manager : MonoBehaviour, IPointerClickHandler
 
     public void Land()
     {
-        if (!isLanded)
+        if (!isLanded && landedController != null)
         {
             // update sprite
             spriteRenderer.sprite = bugInfo.landedSprite;
@@ -57,13 +59,14 @@ public class Bug_Manager : MonoBehaviour, IPointerClickHandler
             steeringController.PauseSteeringBehaviors();
 
             // turn on small movement behaviors
-            steeringController.StartLandedBehaviors();
+            landedController.StartLandedBehaviors();
         }
     }
 
     public void Fly()
     {
         isLanded = false;
+        steeringController.RestoreSteeringBehaviors();
 
         spriteRenderer.sprite = bugInfo.flyingSprite;
     }

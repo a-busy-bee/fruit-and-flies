@@ -5,7 +5,7 @@ public class Fly_Collider : MonoBehaviour
 	[SerializeField] private Bug_Manager bugManager;
 	[SerializeField] private Steering_Controller steeringController;
 	[SerializeField] private LayerMask layerMask;
-	private float raycastDistance = 5;
+	private float raycastDistance = 10;
 	private void Update()
 	{
 		RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.position + transform.forward, raycastDistance, layerMask);
@@ -28,9 +28,9 @@ public class Fly_Collider : MonoBehaviour
 		}
 	}
 
-	// void OnDrawGizmosSelected()
-	// {
-	// 	Gizmos.color = Color.cyan;
-	// 	Gizmos.DrawLine(transform.position, transform.position + transform.forward * 10f);
-	// }
+	void OnDrawGizmosSelected()
+	{
+		Gizmos.color = Color.cyan;
+		Gizmos.DrawLine(transform.position, transform.position + transform.forward * 10f);
+	}
 }

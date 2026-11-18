@@ -18,11 +18,11 @@ MonoBehaviour:
   initialDamage: 1
   continuousDamage: 0.1
   damageDebuff: 0.1
-  maxVelocity: 10
+  maxVelocity: 20
   slowingRadius: 1
   wanderCircleDistance: {x: 0.8, y: 0, z: 0}
   wanderCircleRadius: 4
-  maxForce: 35
+  maxForce: 40
   maxFleeForce: 35
   fleeingRadius: 5
   mass: 1
