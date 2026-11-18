@@ -95,6 +95,7 @@ GameObject:
   - component: {fileID: 991105060643523591}
   - component: {fileID: 8843499755870487584}
   - component: {fileID: 1644008307553058749}
+  - component: {fileID: 7406605602626487808}
   m_Layer: 0
   m_Name: bigFly
   m_TagString: Untagged
@@ -191,6 +192,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Bug_Manager
   bugInfo: {fileID: 11400000, guid: 4ccd9f4e7a88d440a97919206dc1368d, type: 2}
+  animator: {fileID: 0}
 --- !u!114 &7511036213029331880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -308,3 +310,25 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.69
+--- !u!95 &7406605602626487808
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2952259769455102329}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

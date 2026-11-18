@@ -5,6 +5,7 @@ using UnityEngine.EventSystems;
 public class Bug_Manager : MonoBehaviour, IPointerClickHandler
 {
     [SerializeField] private Bug_Info bugInfo;
+    [SerializeField] private Animator animator;
     private SpriteRenderer spriteRenderer;
     private Steering_Controller steeringController;
     private Landed_Controller landedController;
@@ -16,6 +17,7 @@ public class Bug_Manager : MonoBehaviour, IPointerClickHandler
         spriteRenderer = GetComponent<SpriteRenderer>();
         steeringController = GetComponent<Steering_Controller>();
         landedController = GetComponent<Landed_Controller>();
+        animator = GetComponent<Animator>();
     }
 
     public Bug_Info GetBugInfo()
@@ -49,6 +51,7 @@ public class Bug_Manager : MonoBehaviour, IPointerClickHandler
         }
         else if (!spriteRenderer.flipX && velocity.x < 0)
         {
+            if (animator != null) animator.SetTrigger("Flip");
             spriteRenderer.flipX = true;
         }
     }
@@ -65,6 +68,8 @@ public class Bug_Manager : MonoBehaviour, IPointerClickHandler
 
             // turn on small movement behaviors
             landedController.StartLandedBehaviors();
+
+            if (animator != null) animator.SetTrigger("Land");
         }
     }
 
@@ -74,6 +79,8 @@ public class Bug_Manager : MonoBehaviour, IPointerClickHandler
         steeringController.RestoreSteeringBehaviors();
 
         spriteRenderer.sprite = bugInfo.flyingSprite;
+
+        if (animator != null) animator.SetTrigger("Fly");
     }
 
     private IEnumerator WaitThenDestroy()
