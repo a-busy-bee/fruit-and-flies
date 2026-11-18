@@ -1,11 +1,14 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
 public class Bug_Manager : MonoBehaviour, IPointerClickHandler
 {
     [SerializeField] private Bug_Info bugInfo;
+    [SerializeField] private Animator animator;
     private SpriteRenderer spriteRenderer;
     private Steering_Controller steeringController;
+    private Landed_Controller landedController;
     private bool isDead;
     private bool isLanded;
 
@@ -13,6 +16,8 @@ public class Bug_Manager : MonoBehaviour, IPointerClickHandler
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         steeringController = GetComponent<Steering_Controller>();
+        landedController = GetComponent<Landed_Controller>();
+        animator = GetComponent<Animator>();
     }
 
     public Bug_Info GetBugInfo()
@@ -30,7 +35,11 @@ public class Bug_Manager : MonoBehaviour, IPointerClickHandler
             GetComponent<CircleCollider2D>().enabled = false;
 
             rb.mass = 2f;
-            isDead = true;  
+            isDead = true; 
+
+            LevelManager.instance.KillFly();
+
+            StartCoroutine(WaitThenDestroy()); 
         }
     }
 
@@ -42,13 +51,14 @@ public class Bug_Manager : MonoBehaviour, IPointerClickHandler
         }
         else if (!spriteRenderer.flipX && velocity.x < 0)
         {
+            if (animator != null) animator.SetTrigger("Flip");
             spriteRenderer.flipX = true;
         }
     }
 
     public void Land()
     {
-        if (!isLanded)
+        if (!isLanded && landedController != null)
         {
             // update sprite
             spriteRenderer.sprite = bugInfo.landedSprite;
@@ -57,14 +67,26 @@ public class Bug_Manager : MonoBehaviour, IPointerClickHandler
             steeringController.PauseSteeringBehaviors();
 
             // turn on small movement behaviors
-            steeringController.StartLandedBehaviors();
+            landedController.StartLandedBehaviors();
+
+            if (animator != null) animator.SetTrigger("Land");
         }
     }
 
     public void Fly()
     {
         isLanded = false;
+        steeringController.RestoreSteeringBehaviors();
 
         spriteRenderer.sprite = bugInfo.flyingSprite;
+
+        if (animator != null) animator.SetTrigger("Fly");
+    }
+
+    private IEnumerator WaitThenDestroy()
+    {
+        yield return new WaitForSeconds(3);
+
+        Destroy(gameObject);
     }
 }

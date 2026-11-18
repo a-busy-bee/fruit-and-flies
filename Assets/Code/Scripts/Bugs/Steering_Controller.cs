@@ -18,10 +18,7 @@ public class BehaviorWeightPair
 public class Steering_Controller : MonoBehaviour
 {
 	[SerializeField] private BehaviorWeightPair[] behaviors;
-	[SerializeField] private Rigidbody2D rigidbody;
 	private const float TARGET_DIST_THRESHOLD = 5;
-	private const float ROT_FORCE_MIN = 10f;
-	private const float ROT_FORCE_MAX = 15f;
 	private List<float> behaviorWeights = new List<float>(); 
 	private Bug_Info bugInfo;
 	private Vector3 velocity = Vector3.zero;
@@ -145,28 +142,6 @@ public class Steering_Controller : MonoBehaviour
 
 	#endregion
 
-	#region Landed Steering Behaviors
-	public void StartLandedBehaviors()
-	{
-		StartCoroutine(LandedBehavior());
-	}
-
-	private IEnumerator LandedBehavior()
-	{
-		int cycles = Random.Range(1, 5);
-
-		for (int i = 0; i < cycles; i++)
-		{
-			yield return new WaitForSeconds(Random.Range(0f, 1f));
-
-			// apply random force to the z-axis to rotate the fly
-			float zForce = Random.Range(ROT_FORCE_MIN, ROT_FORCE_MAX);
-
-			rigidbody.AddTorque(zForce, ForceMode2D.Impulse);
-		}
-	}
-
-	#endregion
 
 	#region Getters
 
