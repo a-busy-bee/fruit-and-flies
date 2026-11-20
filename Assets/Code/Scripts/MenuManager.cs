@@ -9,9 +9,6 @@ public class MenuManager : MonoBehaviour
     [SerializeField] private Animator levelPageAnimator;
 
     [SerializeField] private GameObject[] levelButtons;
-
-    [SerializeField] private GameObject blackbkg;
-    [SerializeField] private CanvasGroup fadeToBlack;
     private float currVelocity;
     bool fading = false;
     bool transitioningToLevel = false;
@@ -23,45 +20,15 @@ public class MenuManager : MonoBehaviour
         // {
         //     button.SetActive(false);
         // }
+        
+        AudioManager.instance.SwitchTheme(AudioManager.MusicType.baseTheme);
 
         StartCoroutine(WaitToFlip());
-
-        AudioManager.instance.SwitchTheme(AudioManager.MusicType.baseTheme);
     }
     
-    private void Update()
-    {
-        if (fading)
-        {
-            if (transitioningToLevel)
-            {
-                fadeToBlack.alpha = Mathf.SmoothDamp(fadeToBlack.alpha, 1, ref currVelocity, 0.75f);
-
-                if ((1 - fadeToBlack.alpha) < 0.0001f)
-                {
-                    fading = false;
-                }
-            }
-            else
-            {
-                fadeToBlack.alpha = Mathf.SmoothDamp(fadeToBlack.alpha, 0, ref currVelocity, 1.5f);
-
-                if (fadeToBlack.alpha < 0.0001f)
-                {
-                    fading = false;
-                    transitioningToLevel = true;
-                }
-            }
-            
-        }
-    }
-
     private IEnumerator WaitToFlip()
     {
-
-        fading = true;
-        transitioningToLevel = false;
-        fadeToBlack.alpha = 1;
+        FadeToBlack.instance.FadeOut();
 
         yield return new WaitForSeconds(1);
 
@@ -99,28 +66,42 @@ public class MenuManager : MonoBehaviour
 
     public void OnQuit()
     {
-        Application.Quit();
+        StartCoroutine(WaitThenQuit());
     }
 
     #region Levels
     public void LoadTutorial()
     {
-        SceneManager.LoadScene("Tutorial");
+        StartCoroutine(WaitThenLoadScene("Tutorial"));
     }
 
     public void LoadBargaining()
     {
-        SceneManager.LoadScene("Breakfast");
+        StartCoroutine(WaitThenLoadScene("Breakfast"));
     }
 
     public void LoadDepression()
     {
-        SceneManager.LoadScene("Depression");
+        StartCoroutine(WaitThenLoadScene("Depression"));
     }
 
     public void LoadAcceptance()
     {
-        SceneManager.LoadScene("Acceptance");
+        StartCoroutine(WaitThenLoadScene("Acceptance"));
+    }
+
+    private IEnumerator WaitThenLoadScene(string sceneName)
+    {
+        FadeToBlack.instance.FadeIn();
+        yield return new WaitForSeconds(1);
+        SceneManager.LoadScene(sceneName);
+    }
+
+    private IEnumerator WaitThenQuit()
+    {
+        FadeToBlack.instance.FadeIn();
+        yield return new WaitForSeconds(1);
+        Application.Quit();
     }
 
     #endregion
