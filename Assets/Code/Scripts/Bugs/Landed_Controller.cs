@@ -35,8 +35,8 @@ public class Landed_Controller : MonoBehaviour
             yield return new WaitForSeconds(Random.Range(0f, 1f));
 		}
 
+        isRotating = false;
         GetComponent<Bug_Manager>().Fly();
-        transform.rotation = Quaternion.identity;
 	}
 
     private void Update()
@@ -69,7 +69,9 @@ public class Landed_Controller : MonoBehaviour
                 isRotating = false;
             }
         }
-
-        
+        else
+        {
+            transform.rotation = Quaternion.identity;
+        }
     }
 }

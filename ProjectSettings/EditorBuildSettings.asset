@@ -17,13 +17,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Acceptance.unity
     guid: d64e7564599534e74bfd05753dbf69b8
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Anger.unity
     guid: 42ed270f4f8d047f8a961fa0cd9557d4
   - enabled: 1
     path: Assets/Scenes/Breakfast.unity
     guid: 7146ba66d9146459baecb015157688e6
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Denial.unity
     guid: 37f7e19b962d84fad9cce502986b45c5
   m_configObjects:

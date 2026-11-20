@@ -128,7 +128,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 16616346}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_30
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -159,7 +159,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 16718522}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -285,6 +285,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AppleSlice
       objectReference: {fileID: 0}
+    - target: {fileID: 3327988840934134068, guid: 5f45cd764c30545119222c3d76b03aec, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 5506105629977428218, guid: 5f45cd764c30545119222c3d76b03aec, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -292,6 +296,10 @@ PrefabInstance:
     - target: {fileID: 5506105629977428218, guid: 5f45cd764c30545119222c3d76b03aec, type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7427279659070308975, guid: 5f45cd764c30545119222c3d76b03aec, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7828092853146715057, guid: 5f45cd764c30545119222c3d76b03aec, type: 3}
       propertyPath: m_Points.m_Paths.Array.size
@@ -2550,7 +2558,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 23583316}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2581,7 +2589,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 27932374}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_17
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2612,7 +2620,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 30349855}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_32
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2643,7 +2651,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 35078606}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2673,6 +2681,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1474656534}
     m_Modifications:
+    - target: {fileID: 229474088013984843, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1255286791362779808, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -2700,6 +2712,10 @@ PrefabInstance:
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_Name
       value: mold (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6907728403487000167, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2764,7 +2780,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 53908151}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2795,7 +2811,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 57410628}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2826,7 +2842,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 78994559}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2857,7 +2873,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 102693807}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: mold
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2907,7 +2923,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 112909432}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2938,7 +2954,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 113185971}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2969,7 +2985,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 115421148}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2991,6 +3007,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 235825033}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!224 &115866543 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 6367989044838295251, guid: cc6ddbebaea2c4603a80f087f4239f01, type: 3}
+  m_PrefabInstance: {fileID: 1157385705985793015}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &117799316
 GameObject:
   m_ObjectHideFlags: 0
@@ -3000,7 +3021,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 117799317}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: mold
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3047,7 +3068,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 131457626}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3077,6 +3098,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 102693807}
     m_Modifications:
+    - target: {fileID: 229474088013984843, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1255286791362779808, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -3124,6 +3149,10 @@ PrefabInstance:
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_Name
       value: mold (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6907728403487000167, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
@@ -3210,6 +3239,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1474656534}
     m_Modifications:
+    - target: {fileID: 229474088013984843, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1255286791362779808, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -3237,6 +3270,10 @@ PrefabInstance:
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_Name
       value: mold (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_IsActive
@@ -3301,7 +3338,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 204803610}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_29
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3332,7 +3369,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 209909272}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3363,7 +3400,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 217681261}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3393,6 +3430,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 117799317}
     m_Modifications:
+    - target: {fileID: 229474088013984843, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1255286791362779808, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -3420,6 +3461,10 @@ PrefabInstance:
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_Name
       value: mold (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_IsActive
@@ -3541,6 +3586,10 @@ PrefabInstance:
     - target: {fileID: 3327988840934134068, guid: 09b6bccb7dc3e4ae48fe4cd6a471c0b9, type: 3}
       propertyPath: m_Name
       value: AppleBack
+      objectReference: {fileID: 0}
+    - target: {fileID: 3327988840934134068, guid: 09b6bccb7dc3e4ae48fe4cd6a471c0b9, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5506105629977428218, guid: 09b6bccb7dc3e4ae48fe4cd6a471c0b9, type: 3}
       propertyPath: m_Sprite
@@ -16226,7 +16275,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 240410807}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16280,6 +16329,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1752868576}
+  - {fileID: 115866543}
   m_Father: {fileID: 703779372}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -16346,7 +16396,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
   m_UseReflectionProbes: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -16359,6 +16409,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1474656534}
     m_Modifications:
+    - target: {fileID: 229474088013984843, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1255286791362779808, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.2124
@@ -16406,6 +16460,10 @@ PrefabInstance:
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_Name
       value: mold (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6907728403487000167, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.y
@@ -16477,6 +16535,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 117799317}
     m_Modifications:
+    - target: {fileID: 229474088013984843, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1255286791362779808, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -16504,6 +16566,10 @@ PrefabInstance:
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_Name
       value: mold (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_IsActive
@@ -16591,7 +16657,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 266775663}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16622,7 +16688,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 279480445}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: mold
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16658,7 +16724,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 280052397}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16689,7 +16755,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 280242098}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16720,7 +16786,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 286873797}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16751,7 +16817,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 305587563}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16782,7 +16848,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 306133440}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16813,7 +16879,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 339350103}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16843,6 +16909,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 117799317}
     m_Modifications:
+    - target: {fileID: 229474088013984843, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1255286791362779808, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -16890,6 +16960,10 @@ PrefabInstance:
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_Name
       value: mold (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_IsActive
@@ -16972,6 +17046,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1533631374}
     m_Modifications:
+    - target: {fileID: 229474088013984843, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1255286791362779808, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -17019,6 +17097,10 @@ PrefabInstance:
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_Name
       value: mold (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_IsActive
@@ -17102,7 +17184,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 358099741}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17133,7 +17215,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 363687976}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17164,7 +17246,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 378235448}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17195,7 +17277,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 379251199}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17225,6 +17307,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 117799317}
     m_Modifications:
+    - target: {fileID: 229474088013984843, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1255286791362779808, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -17272,6 +17358,10 @@ PrefabInstance:
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_Name
       value: mold (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6907728403487000167, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17347,7 +17437,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 427818599}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17378,7 +17468,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 431636815}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17409,7 +17499,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 431732149}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17439,6 +17529,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 102693807}
     m_Modifications:
+    - target: {fileID: 229474088013984843, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1255286791362779808, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -17486,6 +17580,10 @@ PrefabInstance:
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_Name
       value: mold (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_IsActive
@@ -17576,6 +17674,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 102693807}
     m_Modifications:
+    - target: {fileID: 229474088013984843, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1255286791362779808, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -17623,6 +17725,10 @@ PrefabInstance:
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_Name
       value: mold (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_IsActive
@@ -17706,7 +17812,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 457561867}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17783,6 +17889,10 @@ PrefabInstance:
     - target: {fileID: 3327988840934134068, guid: 09b6bccb7dc3e4ae48fe4cd6a471c0b9, type: 3}
       propertyPath: m_Name
       value: Hourglass
+      objectReference: {fileID: 0}
+    - target: {fileID: 3327988840934134068, guid: 09b6bccb7dc3e4ae48fe4cd6a471c0b9, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5506105629977428218, guid: 09b6bccb7dc3e4ae48fe4cd6a471c0b9, type: 3}
       propertyPath: m_Sprite
@@ -29067,7 +29177,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 474438291}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29098,7 +29208,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 491669542}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29128,6 +29238,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1474656534}
     m_Modifications:
+    - target: {fileID: 229474088013984843, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1255286791362779808, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -29175,6 +29289,10 @@ PrefabInstance:
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_Name
       value: mold (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6907728403487000167, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
@@ -29481,7 +29599,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 524284274}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_27
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29512,7 +29630,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 524391752}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29542,6 +29660,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 117799317}
     m_Modifications:
+    - target: {fileID: 229474088013984843, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1255286791362779808, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -29589,6 +29711,10 @@ PrefabInstance:
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_Name
       value: mold (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6907728403487000167, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
@@ -29675,6 +29801,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1533631374}
     m_Modifications:
+    - target: {fileID: 229474088013984843, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1255286791362779808, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -29702,6 +29832,10 @@ PrefabInstance:
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_Name
       value: mold (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6907728403487000167, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalPosition.x
@@ -29776,6 +29910,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1217041472}
     m_Modifications:
+    - target: {fileID: 229474088013984843, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1255286791362779808, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -29803,6 +29941,10 @@ PrefabInstance:
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_Name
       value: mold (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_IsActive
@@ -29877,6 +30019,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 102693807}
     m_Modifications:
+    - target: {fileID: 229474088013984843, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1255286791362779808, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -29904,6 +30050,10 @@ PrefabInstance:
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_Name
       value: mold (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6907728403487000167, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
@@ -29990,6 +30140,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 117799317}
     m_Modifications:
+    - target: {fileID: 229474088013984843, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1255286791362779808, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -30037,6 +30191,10 @@ PrefabInstance:
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_Name
       value: mold (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_IsActive
@@ -30124,7 +30282,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 636672699}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30155,7 +30313,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 644973392}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30186,7 +30344,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 652852814}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30245,7 +30403,12 @@ MonoBehaviour:
   spawnRight: {fileID: 1687492730}
   prefabBigFly: {fileID: 2952259769455102329, guid: af23b5bb0183049f4b556a558023d823, type: 3}
   prefabFruitFly: {fileID: 2952259769455102329, guid: fd5f23f18f33a4678aefd6f83656ef4f, type: 3}
+  currNumFlies: 0
+  maxFlies: 15
+  spawnInterval: 1
   fadeToBlack: {fileID: 1752868577}
+  fadetoBlack: {fileID: 0}
+  pauseScreen: {fileID: 1157385705985793016}
 --- !u!4 &703779372
 Transform:
   m_ObjectHideFlags: 0
@@ -30273,7 +30436,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 736341608}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30304,7 +30467,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 737713186}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30335,7 +30498,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 752114925}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Stack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30446,7 +30609,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 763904077}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30477,7 +30640,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 786569490}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30507,6 +30670,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1533631374}
     m_Modifications:
+    - target: {fileID: 229474088013984843, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1255286791362779808, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -30534,6 +30701,10 @@ PrefabInstance:
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_Name
       value: mold (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6907728403487000167, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.y
@@ -30613,7 +30784,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 802881724}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30735,10 +30906,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fig
       objectReference: {fileID: 0}
+    - target: {fileID: 3327988840934134068, guid: 5f45cd764c30545119222c3d76b03aec, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 5506105629977428218, guid: 5f45cd764c30545119222c3d76b03aec, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 1297896692, guid: 508aa884ce2fcf147a66ea3244a3a742, type: 3}
+    - target: {fileID: 7427279659070308975, guid: 5f45cd764c30545119222c3d76b03aec, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7828092853146715057, guid: 5f45cd764c30545119222c3d76b03aec, type: 3}
       propertyPath: m_Points.m_Paths.Array.size
       value: 3
@@ -33023,7 +33202,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 831225769}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33182,10 +33361,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: AppleHalf
       objectReference: {fileID: 0}
+    - target: {fileID: 3327988840934134068, guid: 5f45cd764c30545119222c3d76b03aec, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 5506105629977428218, guid: 5f45cd764c30545119222c3d76b03aec, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 1101187549, guid: 508aa884ce2fcf147a66ea3244a3a742, type: 3}
+    - target: {fileID: 7427279659070308975, guid: 5f45cd764c30545119222c3d76b03aec, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7828092853146715057, guid: 5f45cd764c30545119222c3d76b03aec, type: 3}
       propertyPath: m_Points.m_Paths.Array.size
       value: 2
@@ -35426,6 +35613,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1474656534}
     m_Modifications:
+    - target: {fileID: 229474088013984843, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1255286791362779808, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -35453,6 +35644,10 @@ PrefabInstance:
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_Name
       value: mold (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6907728403487000167, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalPosition.x
@@ -35528,7 +35723,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 842597635}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35559,7 +35754,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 865274101}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35589,6 +35784,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1217041472}
     m_Modifications:
+    - target: {fileID: 229474088013984843, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1255286791362779808, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -35636,6 +35835,10 @@ PrefabInstance:
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_Name
       value: mold (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_IsActive
@@ -35731,7 +35934,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 868654270}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35762,7 +35965,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 869173111}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35876,6 +36079,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BalanceBerry
       objectReference: {fileID: 0}
+    - target: {fileID: 3327988840934134068, guid: 5f45cd764c30545119222c3d76b03aec, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 5506105629977428218, guid: 5f45cd764c30545119222c3d76b03aec, type: 3}
       propertyPath: m_Size.x
       value: 1.18
@@ -35891,6 +36098,10 @@ PrefabInstance:
     - target: {fileID: 5506105629977428218, guid: 5f45cd764c30545119222c3d76b03aec, type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7427279659070308975, guid: 5f45cd764c30545119222c3d76b03aec, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7828092853146715057, guid: 5f45cd764c30545119222c3d76b03aec, type: 3}
       propertyPath: m_Points.m_Paths.Array.size
@@ -38496,6 +38707,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 117799317}
     m_Modifications:
+    - target: {fileID: 229474088013984843, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1255286791362779808, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -38523,6 +38738,10 @@ PrefabInstance:
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_Name
       value: mold (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6907728403487000167, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalPosition.x
@@ -38598,7 +38817,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 896575095}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38629,7 +38848,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 908143013}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38660,7 +38879,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 920361908}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_31
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38822,10 +39041,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigApple
       objectReference: {fileID: 0}
+    - target: {fileID: 3327988840934134068, guid: 5f45cd764c30545119222c3d76b03aec, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 5506105629977428218, guid: 5f45cd764c30545119222c3d76b03aec, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 1442355955, guid: 508aa884ce2fcf147a66ea3244a3a742, type: 3}
+    - target: {fileID: 7427279659070308975, guid: 5f45cd764c30545119222c3d76b03aec, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7828092853146715057, guid: 5f45cd764c30545119222c3d76b03aec, type: 3}
       propertyPath: m_Points.m_Paths.Array.size
       value: 9
@@ -40970,6 +41197,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1217041472}
     m_Modifications:
+    - target: {fileID: 229474088013984843, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1255286791362779808, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -41017,6 +41248,10 @@ PrefabInstance:
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_Name
       value: mold (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6907728403487000167, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
@@ -41104,7 +41339,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 971796937}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41134,6 +41369,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1217041472}
     m_Modifications:
+    - target: {fileID: 229474088013984843, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1255286791362779808, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -41161,6 +41400,10 @@ PrefabInstance:
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_Name
       value: mold (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6907728403487000167, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
@@ -41248,7 +41491,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 991697906}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41279,7 +41522,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1011307927}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41310,7 +41553,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1017976979}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41375,7 +41618,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1025453668}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Stack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41407,7 +41650,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1031353799}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_24
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41437,6 +41680,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1474656534}
     m_Modifications:
+    - target: {fileID: 229474088013984843, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1255286791362779808, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -41484,6 +41731,10 @@ PrefabInstance:
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_Name
       value: mold (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_IsActive
@@ -41556,7 +41807,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1044309241}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_20
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41587,7 +41838,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1046732963}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41618,7 +41869,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1052877382}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41649,7 +41900,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1055751696}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41680,7 +41931,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1066340328}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41711,7 +41962,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1072886263}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41742,7 +41993,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1081654774}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41772,6 +42023,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 279480445}
     m_Modifications:
+    - target: {fileID: 229474088013984843, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1255286791362779808, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -41819,6 +42074,10 @@ PrefabInstance:
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_Name
       value: mold (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_IsActive
@@ -41909,6 +42168,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1474656534}
     m_Modifications:
+    - target: {fileID: 229474088013984843, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1255286791362779808, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -41956,6 +42219,10 @@ PrefabInstance:
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_Name
       value: mold (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_IsActive
@@ -42034,6 +42301,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 117799317}
     m_Modifications:
+    - target: {fileID: 229474088013984843, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1255286791362779808, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -42081,6 +42352,10 @@ PrefabInstance:
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_Name
       value: mold (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_IsActive
@@ -42167,6 +42442,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 117799317}
     m_Modifications:
+    - target: {fileID: 229474088013984843, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1255286791362779808, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.2124
@@ -42214,6 +42493,10 @@ PrefabInstance:
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_Name
       value: mold (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6907728403487000167, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.y
@@ -42296,6 +42579,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1533631374}
     m_Modifications:
+    - target: {fileID: 229474088013984843, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1255286791362779808, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -42343,6 +42630,10 @@ PrefabInstance:
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_Name
       value: mold (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_IsActive
@@ -42422,7 +42713,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1151323367}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42453,7 +42744,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1162434788}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42484,7 +42775,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1205801484}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42515,7 +42806,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1217041472}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: mold
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42549,6 +42840,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 102693807}
     m_Modifications:
+    - target: {fileID: 229474088013984843, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1255286791362779808, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -42576,6 +42871,10 @@ PrefabInstance:
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_Name
       value: mold (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6907728403487000167, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
@@ -42662,6 +42961,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 279480445}
     m_Modifications:
+    - target: {fileID: 229474088013984843, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1255286791362779808, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -42689,6 +42992,10 @@ PrefabInstance:
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_Name
       value: mold (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_IsActive
@@ -42905,7 +43212,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1247849246}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42935,6 +43242,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 279480445}
     m_Modifications:
+    - target: {fileID: 229474088013984843, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1255286791362779808, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -42982,6 +43293,10 @@ PrefabInstance:
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_Name
       value: mold (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6907728403487000167, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
@@ -43068,6 +43383,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 279480445}
     m_Modifications:
+    - target: {fileID: 229474088013984843, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1255286791362779808, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -43115,6 +43434,10 @@ PrefabInstance:
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_Name
       value: mold (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_IsActive
@@ -43286,7 +43609,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1296397167}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43404,6 +43727,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hanging
       objectReference: {fileID: 0}
+    - target: {fileID: 3327988840934134068, guid: 5f45cd764c30545119222c3d76b03aec, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 5506105629977428218, guid: 5f45cd764c30545119222c3d76b03aec, type: 3}
       propertyPath: m_Size.x
       value: 1.43
@@ -43419,6 +43746,10 @@ PrefabInstance:
     - target: {fileID: 5506105629977428218, guid: 5f45cd764c30545119222c3d76b03aec, type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7427279659070308975, guid: 5f45cd764c30545119222c3d76b03aec, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7828092853146715057, guid: 5f45cd764c30545119222c3d76b03aec, type: 3}
       propertyPath: m_Points.m_Paths.Array.size
@@ -46041,7 +46372,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1310173879}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46104,6 +46435,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 117799317}
     m_Modifications:
+    - target: {fileID: 229474088013984843, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1255286791362779808, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -46151,6 +46486,10 @@ PrefabInstance:
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_Name
       value: mold (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6907728403487000167, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
@@ -46237,6 +46576,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 102693807}
     m_Modifications:
+    - target: {fileID: 229474088013984843, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1255286791362779808, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.2124
@@ -46284,6 +46627,10 @@ PrefabInstance:
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_Name
       value: mold (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6907728403487000167, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
@@ -46375,7 +46722,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1357568983}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46406,7 +46753,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1373143523}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46437,7 +46784,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1403354549}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Stack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46471,6 +46818,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 102693807}
     m_Modifications:
+    - target: {fileID: 229474088013984843, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1255286791362779808, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -46498,6 +46849,10 @@ PrefabInstance:
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_Name
       value: mold (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6907728403487000167, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
@@ -46585,7 +46940,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1423448690}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46616,7 +46971,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1427900597}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46647,7 +47002,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1460779011}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46678,7 +47033,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1460899326}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_25
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46709,7 +47064,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1468458983}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46740,7 +47095,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1474656534}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: mold
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46778,6 +47133,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 102693807}
     m_Modifications:
+    - target: {fileID: 229474088013984843, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1255286791362779808, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -46825,6 +47184,10 @@ PrefabInstance:
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_Name
       value: mold (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_IsActive
@@ -46912,7 +47275,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1483813362}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46943,7 +47306,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1487660854}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46974,7 +47337,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1487888967}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47006,7 +47369,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1520330487}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47038,7 +47401,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1533631374}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: mold
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47078,7 +47441,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1541976525}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47109,7 +47472,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1550615943}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47140,7 +47503,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1563271376}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47171,7 +47534,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1566237965}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47202,7 +47565,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1571684194}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_23
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47233,7 +47596,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1575200800}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47264,7 +47627,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1581707860}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47294,6 +47657,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 102693807}
     m_Modifications:
+    - target: {fileID: 229474088013984843, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1255286791362779808, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -47321,6 +47688,10 @@ PrefabInstance:
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_Name
       value: mold (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6907728403487000167, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
@@ -47408,7 +47779,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1588873521}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47439,7 +47810,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1597585858}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47469,6 +47840,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 102693807}
     m_Modifications:
+    - target: {fileID: 229474088013984843, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1255286791362779808, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -47516,6 +47891,10 @@ PrefabInstance:
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_Name
       value: mold (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6907728403487000167, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
@@ -47603,7 +47982,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1601873942}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47633,6 +48012,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1533631374}
     m_Modifications:
+    - target: {fileID: 229474088013984843, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1255286791362779808, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -47680,6 +48063,10 @@ PrefabInstance:
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_Name
       value: mold (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_IsActive
@@ -47810,7 +48197,7 @@ GameObject:
   - component: {fileID: 1612270492}
   - component: {fileID: 1612270493}
   - component: {fileID: 1612270494}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47941,7 +48328,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1624320797}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47972,7 +48359,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1658398356}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48034,7 +48421,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1693864373}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48065,7 +48452,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1697284793}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48095,6 +48482,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 102693807}
     m_Modifications:
+    - target: {fileID: 229474088013984843, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1255286791362779808, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -48122,6 +48513,10 @@ PrefabInstance:
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_Name
       value: mold (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_IsActive
@@ -48209,7 +48604,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1723581714}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48240,7 +48635,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1729626819}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48317,6 +48712,10 @@ PrefabInstance:
     - target: {fileID: 3327988840934134068, guid: 09b6bccb7dc3e4ae48fe4cd6a471c0b9, type: 3}
       propertyPath: m_Name
       value: Knife
+      objectReference: {fileID: 0}
+    - target: {fileID: 3327988840934134068, guid: 09b6bccb7dc3e4ae48fe4cd6a471c0b9, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5506105629977428218, guid: 09b6bccb7dc3e4ae48fe4cd6a471c0b9, type: 3}
       propertyPath: m_Sprite
@@ -59741,7 +60140,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.000061035156, y: -0.000091552734}
+  m_AnchoredPosition: {x: -0.000061035156, y: -0.00012207031}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &1752868577
@@ -59783,7 +60182,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1755541271}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59918,6 +60317,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 102693807}
     m_Modifications:
+    - target: {fileID: 229474088013984843, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1255286791362779808, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -59945,6 +60348,10 @@ PrefabInstance:
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_Name
       value: mold (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_IsActive
@@ -60032,7 +60439,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1769884998}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60063,7 +60470,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1775936486}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60094,7 +60501,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1776634855}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60125,7 +60532,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1780719146}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60156,7 +60563,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1784034469}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60187,7 +60594,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1821488459}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60218,7 +60625,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1826330046}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60248,6 +60655,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1533631374}
     m_Modifications:
+    - target: {fileID: 229474088013984843, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1255286791362779808, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -60295,6 +60706,10 @@ PrefabInstance:
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_Name
       value: mold (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6907728403487000167, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
@@ -60381,6 +60796,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1533631374}
     m_Modifications:
+    - target: {fileID: 229474088013984843, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1255286791362779808, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -60408,6 +60827,10 @@ PrefabInstance:
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_Name
       value: mold (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_IsActive
@@ -60483,7 +60906,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1847487318}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60513,6 +60936,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 117799317}
     m_Modifications:
+    - target: {fileID: 229474088013984843, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1255286791362779808, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -60560,6 +60987,10 @@ PrefabInstance:
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_Name
       value: mold (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_IsActive
@@ -60646,6 +61077,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 102693807}
     m_Modifications:
+    - target: {fileID: 229474088013984843, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1255286791362779808, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -60693,6 +61128,10 @@ PrefabInstance:
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_Name
       value: mold (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6907728403487000167, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
@@ -60780,7 +61219,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1881121459}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60810,6 +61249,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1533631374}
     m_Modifications:
+    - target: {fileID: 229474088013984843, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1255286791362779808, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.2124
@@ -60857,6 +61300,10 @@ PrefabInstance:
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_Name
       value: mold (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6907728403487000167, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
@@ -60948,7 +61395,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1901608585}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60979,7 +61426,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1908464296}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61010,7 +61457,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1919285088}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61041,7 +61488,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1925937945}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61072,7 +61519,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1936851021}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_26
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61103,7 +61550,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1953484373}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61133,6 +61580,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 117799317}
     m_Modifications:
+    - target: {fileID: 229474088013984843, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1255286791362779808, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -61180,6 +61631,10 @@ PrefabInstance:
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_Name
       value: mold (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_IsActive
@@ -61267,7 +61722,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1968433772}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_28
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61298,7 +61753,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1971972776}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_19
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61329,7 +61784,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1976596396}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61360,7 +61815,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1978704954}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61391,7 +61846,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1985675406}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61422,7 +61877,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1993958857}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61452,6 +61907,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 117799317}
     m_Modifications:
+    - target: {fileID: 229474088013984843, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1255286791362779808, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.2124
@@ -61499,6 +61958,10 @@ PrefabInstance:
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_Name
       value: mold (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6907728403487000167, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.y
@@ -61582,7 +62045,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2006674964}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61612,6 +62075,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 102693807}
     m_Modifications:
+    - target: {fileID: 229474088013984843, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1255286791362779808, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -61659,6 +62126,10 @@ PrefabInstance:
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_Name
       value: mold (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_IsActive
@@ -61749,6 +62220,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 117799317}
     m_Modifications:
+    - target: {fileID: 229474088013984843, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1255286791362779808, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -61796,6 +62271,10 @@ PrefabInstance:
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_Name
       value: mold (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_IsActive
@@ -61890,6 +62369,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1474656534}
     m_Modifications:
+    - target: {fileID: 229474088013984843, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1255286791362779808, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -61937,6 +62420,10 @@ PrefabInstance:
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_Name
       value: mold (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_IsActive
@@ -62016,7 +62503,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2057219284}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -62046,6 +62533,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 102693807}
     m_Modifications:
+    - target: {fileID: 229474088013984843, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1255286791362779808, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.2124
@@ -62093,6 +62584,10 @@ PrefabInstance:
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_Name
       value: mold (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6907728403487000167, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
@@ -62183,6 +62678,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 102693807}
     m_Modifications:
+    - target: {fileID: 229474088013984843, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1255286791362779808, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -62230,6 +62729,10 @@ PrefabInstance:
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_Name
       value: mold (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6907728403487000167, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
@@ -62317,7 +62820,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2090962390}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -62476,6 +62979,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 117799317}
     m_Modifications:
+    - target: {fileID: 229474088013984843, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1255286791362779808, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -62503,6 +63010,10 @@ PrefabInstance:
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_Name
       value: mold (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_IsActive
@@ -62578,7 +63089,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2110665055}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bone_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -62608,6 +63119,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 279480445}
     m_Modifications:
+    - target: {fileID: 229474088013984843, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1255286791362779808, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -62635,6 +63150,10 @@ PrefabInstance:
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_Name
       value: mold (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6907728403487000167, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
@@ -62721,6 +63240,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 117799317}
     m_Modifications:
+    - target: {fileID: 229474088013984843, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1255286791362779808, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -62768,6 +63291,10 @@ PrefabInstance:
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_Name
       value: mold (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6907728403487000167, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
@@ -62854,6 +63381,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1533631374}
     m_Modifications:
+    - target: {fileID: 229474088013984843, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1255286791362779808, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -62901,6 +63432,10 @@ PrefabInstance:
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_Name
       value: mold (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6907728403487000167, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
@@ -62987,6 +63522,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 102693807}
     m_Modifications:
+    - target: {fileID: 229474088013984843, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1255286791362779808, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -63034,6 +63573,10 @@ PrefabInstance:
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_Name
       value: mold (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_IsActive
@@ -63120,6 +63663,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 102693807}
     m_Modifications:
+    - target: {fileID: 229474088013984843, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1255286791362779808, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -63147,6 +63694,10 @@ PrefabInstance:
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_Name
       value: mold (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6907728403487000167, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalPosition.x
@@ -63221,6 +63772,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 102693807}
     m_Modifications:
+    - target: {fileID: 229474088013984843, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1255286791362779808, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.2124
@@ -63268,6 +63823,10 @@ PrefabInstance:
     - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_Name
       value: mold (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3522935786964130758, guid: f79807cd3979d45a69613a269583a645, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6907728403487000167, guid: f79807cd3979d45a69613a269583a645, type: 3}
       propertyPath: m_LocalScale.y
@@ -63342,6 +63901,120 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f72574b75a9a440379792b55b061ac2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Mold
+--- !u!1001 &1157385705985793015
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 252849607}
+    m_Modifications:
+    - target: {fileID: 2331097469291147287, guid: cc6ddbebaea2c4603a80f087f4239f01, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 703779371}
+    - target: {fileID: 2909980731006139905, guid: cc6ddbebaea2c4603a80f087f4239f01, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 703779371}
+    - target: {fileID: 2909980731006139905, guid: cc6ddbebaea2c4603a80f087f4239f01, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: BackToMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 4646844462710898721, guid: cc6ddbebaea2c4603a80f087f4239f01, type: 3}
+      propertyPath: m_Name
+      value: Paused
+      objectReference: {fileID: 0}
+    - target: {fileID: 6367989044838295251, guid: cc6ddbebaea2c4603a80f087f4239f01, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6367989044838295251, guid: cc6ddbebaea2c4603a80f087f4239f01, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6367989044838295251, guid: cc6ddbebaea2c4603a80f087f4239f01, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6367989044838295251, guid: cc6ddbebaea2c4603a80f087f4239f01, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6367989044838295251, guid: cc6ddbebaea2c4603a80f087f4239f01, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6367989044838295251, guid: cc6ddbebaea2c4603a80f087f4239f01, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6367989044838295251, guid: cc6ddbebaea2c4603a80f087f4239f01, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 585.8915
+      objectReference: {fileID: 0}
+    - target: {fileID: 6367989044838295251, guid: cc6ddbebaea2c4603a80f087f4239f01, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 399.7331
+      objectReference: {fileID: 0}
+    - target: {fileID: 6367989044838295251, guid: cc6ddbebaea2c4603a80f087f4239f01, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6367989044838295251, guid: cc6ddbebaea2c4603a80f087f4239f01, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6367989044838295251, guid: cc6ddbebaea2c4603a80f087f4239f01, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6367989044838295251, guid: cc6ddbebaea2c4603a80f087f4239f01, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6367989044838295251, guid: cc6ddbebaea2c4603a80f087f4239f01, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6367989044838295251, guid: cc6ddbebaea2c4603a80f087f4239f01, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6367989044838295251, guid: cc6ddbebaea2c4603a80f087f4239f01, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6367989044838295251, guid: cc6ddbebaea2c4603a80f087f4239f01, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6367989044838295251, guid: cc6ddbebaea2c4603a80f087f4239f01, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 6367989044838295251, guid: cc6ddbebaea2c4603a80f087f4239f01, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6367989044838295251, guid: cc6ddbebaea2c4603a80f087f4239f01, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6367989044838295251, guid: cc6ddbebaea2c4603a80f087f4239f01, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cc6ddbebaea2c4603a80f087f4239f01, type: 3}
+--- !u!1 &1157385705985793016 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4646844462710898721, guid: cc6ddbebaea2c4603a80f087f4239f01, type: 3}
+  m_PrefabInstance: {fileID: 1157385705985793015}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
