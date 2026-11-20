@@ -31,17 +31,28 @@ public class Bug_Manager : MonoBehaviour, IPointerClickHandler
 
         if (!isDead)
         {
-            Rigidbody2D rb = gameObject.AddComponent<Rigidbody2D>();
-            GetComponent<CircleCollider2D>().enabled = false;
-
-            rb.mass = 2f;
-            isDead = true; 
-
-            LevelManager.instance.KillFly();
-
-            StartCoroutine(WaitThenDestroy()); 
+            StartCoroutine(DoDeathSequence());
         }
     }
+
+    IEnumerator DoDeathSequence()
+    {
+        isDead = true; 
+        Rigidbody2D rb = gameObject.AddComponent<Rigidbody2D>();
+        GetComponent<CircleCollider2D>().enabled = false;
+        animator.SetTrigger("Die");
+
+        // freeze position here
+
+        yield return new WaitForSeconds(0.32f);
+
+        // unfreeze position
+
+        rb.mass = 2f;
+        LevelManager.instance.KillFly();
+
+        StartCoroutine(WaitThenDestroy()); 
+}
 
     public void CheckFlipSprite(Vector3 velocity)
     {

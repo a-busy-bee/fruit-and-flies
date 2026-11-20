@@ -5993,6 +5993,10 @@ MonoBehaviour:
   objects:
   - {fileID: 1354685880}
   - {fileID: 223198793}
+  spawnLeft: {fileID: 0}
+  spawnRight: {fileID: 0}
+  prefabBigFly: {fileID: 0}
+  prefabFruitFly: {fileID: 0}
   blackbkg: {fileID: 0}
   fadeToBlack: {fileID: 0}
 --- !u!1 &1647482117
@@ -6208,6 +6212,14 @@ PrefabInstance:
     - target: {fileID: 2952259769455102329, guid: af23b5bb0183049f4b556a558023d823, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4040296540391615169, guid: af23b5bb0183049f4b556a558023d823, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6674891
+      objectReference: {fileID: 0}
+    - target: {fileID: 4040296540391615169, guid: af23b5bb0183049f4b556a558023d823, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.74461955
       objectReference: {fileID: 0}
     - target: {fileID: 4222761340135374924, guid: af23b5bb0183049f4b556a558023d823, type: 3}
       propertyPath: bugInfo
@@ -6451,6 +6463,14 @@ PrefabInstance:
     - target: {fileID: 2952259769455102329, guid: af23b5bb0183049f4b556a558023d823, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4040296540391615169, guid: af23b5bb0183049f4b556a558023d823, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6674899
+      objectReference: {fileID: 0}
+    - target: {fileID: 4040296540391615169, guid: af23b5bb0183049f4b556a558023d823, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.7446189
       objectReference: {fileID: 0}
     - target: {fileID: 4222761340135374924, guid: af23b5bb0183049f4b556a558023d823, type: 3}
       propertyPath: bugInfo
