@@ -28,15 +28,22 @@ public class LevelManager : MonoBehaviour
     [SerializeField] private int currNumFlies = 0;
     
     [Header("Level Difficulty")]
-    [SerializeField] private int maxFlies = 15; 
+    [SerializeField] private int maxFlies = 5; 
     
     [SerializeField] private float spawnInterval = 1f;
 
 
     // FADE TO BLACK
     [SerializeField] private Animator fadeToBlack;
+    [SerializeField] private CanvasGroup fadetoBlack;
     private float currVelocity;
+    private bool lose;
+    private int currScene;
+    private int nextScene;
     bool levelRunning = false;
+
+    [SerializeField] private GameObject pauseScreen;
+    private bool isPaused; 
 
     private void Awake()
     {
@@ -136,7 +143,7 @@ public class LevelManager : MonoBehaviour
     {
         while (!levelRunning)
         {
-            yield return new WaitForSeconds(10);
+            yield return new WaitForSeconds(5);
 
             maxFlies = (int)(maxFlies * maxFlyMultiplier);
             Debug.Log("maxFlies : " + maxFlies);
@@ -197,11 +204,65 @@ public class LevelManager : MonoBehaviour
     {
         fadeToBlack.SetTrigger("Close");
         levelRunning = true;
+
         yield return new WaitForSeconds(3f);
+        
         if (isLose) 
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        else 
+        else
+        {
+            PlayerPrefs.SetInt("PrevLevel", currScene);
+            PlayerPrefs.SetInt("CurrLevel", nextScene);
+
+            AudioManager.instance.SwitchTheme(AudioManager.MusicType.baseTheme);
             SceneManager.LoadScene("Menu");
+        }
+    }
+
+    private void Update()
+    {
+        if (Keyboard.current.escapeKey.wasPressedThisFrame)
+        {
+            if (isPaused)
+            {
+                isPaused = false;
+                pauseScreen.SetActive(false);
+                AudioListener.pause = false;
+
+                Time.timeScale = 1f;
+            }
+            else
+            {
+                isPaused = true;
+                pauseScreen.SetActive(true);
+                AudioListener.pause = true;
+
+                Time.timeScale = 0f;
+            }
+            
+        }
+    }
+
+    public void BackToMenu()
+    {
+        // hardcoded roundabout wait of quitting ot menu
+        // bad bad bad don't do this
+        Time.timeScale = 1f;
+        AudioListener.pause = false;
+
+        lose = false;
+
+        AudioManager.instance.SwitchTheme(AudioManager.MusicType.baseTheme);
+        SceneManager.LoadScene("Menu");
+    }
+
+    public void Unpause()
+    {
+        Time.timeScale = 1f;
+        AudioListener.pause = false;
+
+        isPaused = false;
+        pauseScreen.SetActive(false);
     }
 
     #endregion
