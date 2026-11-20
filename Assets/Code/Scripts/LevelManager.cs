@@ -31,6 +31,8 @@ public class LevelManager : MonoBehaviour
     private float currVelocity;
     bool fading = false;
     bool lose = false;
+    private int currScene;
+    private int nextScene;
 
     private void Awake()
     {
@@ -56,15 +58,23 @@ public class LevelManager : MonoBehaviour
         {
             case "Tutorial":
                 theme = AudioManager.MusicType.tutorial;
+                currScene = 1;
+                nextScene = 2;
                 break;
             case "Bargaining":
                 theme = AudioManager.MusicType.breakfast;
+                currScene = 2;
+                nextScene = 3;
                 break;
             case "Depression":
                 theme = AudioManager.MusicType.dinner;
+                currScene = 3;
+                nextScene = 4;
                 break;
             case "Acceptance":
                 theme = AudioManager.MusicType.midnight;
+                currScene = 4;
+                nextScene = -1;
                 break;
         }
 
@@ -174,6 +184,12 @@ public class LevelManager : MonoBehaviour
     {
         fading = true;
         lose = isLose;
+
+        if (!isLose)
+        {
+            PlayerPrefs.SetInt("PrevLevel", currScene);
+            PlayerPrefs.SetInt("CurrLevel", nextScene);
+        }
     }
 
     private void Update()

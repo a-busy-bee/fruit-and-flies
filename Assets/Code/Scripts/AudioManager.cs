@@ -3,6 +3,7 @@ using System.Collections;
 using UnityEngine.Audio;
 using System;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 [Serializable] public class SoundBase
 {
@@ -177,6 +178,9 @@ public class AudioManager : MonoBehaviour
         Music theme = Array.Find(themes, theme => theme.type == nextName);
 
         CrossfadeMusic(theme, 0.5f);
+
+        if (SceneManager.GetActiveScene().name != "Menu")
+            StartCoroutine(EndLevel());
     }
 
     public void CrossfadeMusic(Music nextTrack, float duration)
@@ -225,6 +229,13 @@ public class AudioManager : MonoBehaviour
         AudioSource temp = themeSource; // the ol' switcheroo
         themeSource = nextThemeSource;
         nextThemeSource = temp;
+    }
+
+    private IEnumerator EndLevel()
+    {
+        yield return new WaitForSeconds(themeSource.clip.length - 2);
+
+        LevelManager.instance.FadeToBlack(false);
     }
 
     #endregion

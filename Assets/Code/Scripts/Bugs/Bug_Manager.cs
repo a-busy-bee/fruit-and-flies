@@ -35,18 +35,20 @@ public class Bug_Manager : MonoBehaviour, IPointerClickHandler
         }
     }
 
-    IEnumerator DoDeathSequence()
+    private IEnumerator DoDeathSequence()
     {
         isDead = true; 
         Rigidbody2D rb = gameObject.AddComponent<Rigidbody2D>();
         GetComponent<CircleCollider2D>().enabled = false;
-        animator.SetTrigger("Die");
+        if (animator != null) animator.SetTrigger("Die");
 
         // freeze position here
+        rb.bodyType = RigidbodyType2D.Static;
 
         yield return new WaitForSeconds(0.32f);
 
         // unfreeze position
+        rb.bodyType = RigidbodyType2D.Dynamic;
 
         rb.mass = 2f;
         LevelManager.instance.KillFly();
