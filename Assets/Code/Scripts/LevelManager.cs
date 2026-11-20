@@ -27,10 +27,9 @@ public class LevelManager : MonoBehaviour
 
     // FADE TO BLACK
     [SerializeField] private GameObject blackbkg;
-    [SerializeField] private CanvasGroup fadeToBlack;
+    [SerializeField] private Animator fadeToBlack;
     private float currVelocity;
-    bool fading = false;
-    bool lose = false;
+    bool levelDone = false;
 
     private void Awake()
     {
@@ -97,6 +96,7 @@ public class LevelManager : MonoBehaviour
 
     public void Spawn(bool isLeft)
     {
+        if (levelDone) return;
         float chance = Random.Range(0.0f, 1.0f);
         Transform spawnTarget = isLeft ? spawnLeft : spawnRight; // (condition) ? if true : if false
         GameObject prefab = (chance < 0.35f) ? prefabBigFly : prefabFruitFly;
@@ -117,7 +117,7 @@ public class LevelManager : MonoBehaviour
 
     private IEnumerator IncreaseMaxFlies()
     {
-        while (!fading)
+        while (!levelDone)
         {
             yield return new WaitForSeconds(10);
 
@@ -172,26 +172,18 @@ public class LevelManager : MonoBehaviour
 
     public void FadeToBlack(bool isLose)
     {
-        fading = true;
-        lose = isLose;
+        StartCoroutine(FtbCoroutine(isLose));
     }
 
-    private void Update()
+    IEnumerator FtbCoroutine(bool isLose)
     {
-        if (fading)
-        {
-            fadeToBlack.alpha = Mathf.SmoothDamp(fadeToBlack.alpha, 1, ref currVelocity, 0.75f);
-
-            if ((1 - fadeToBlack.alpha) < 0.0001f)
-            {
-                fading = false;
-
-                if (lose) 
-                    SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-                else 
-                    SceneManager.LoadScene("Menu");
-            }
-        }
+        fadeToBlack.SetTrigger("Close");
+        levelDone = true;
+        yield return new WaitForSeconds(3f);
+        if (isLose) 
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        else 
+            SceneManager.LoadScene("Menu");
     }
 
     #endregion
