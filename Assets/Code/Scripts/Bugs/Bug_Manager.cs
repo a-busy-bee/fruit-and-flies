@@ -40,7 +40,7 @@ public class Bug_Manager : MonoBehaviour, IPointerClickHandler
         isDead = true; 
         Rigidbody2D rb = gameObject.AddComponent<Rigidbody2D>();
         GetComponent<CircleCollider2D>().enabled = false;
-        animator.SetTrigger("Die");
+        if (animator != null) { animator.SetTrigger("Die"); }
 
         // freeze position here
 
