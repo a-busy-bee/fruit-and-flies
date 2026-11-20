@@ -28,9 +28,8 @@ public class LevelManager : MonoBehaviour
     [SerializeField] private int currNumFlies = 0;
     
     [Header("Level Difficulty")]
-    [SerializeField] private int maxFlies = 5; 
-    
-    [SerializeField] private float spawnInterval = 1f;
+    private int maxFlies = 3; 
+    private float spawnInterval = 3f;
 
 
     // FADE TO BLACK
