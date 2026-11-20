@@ -21,8 +21,13 @@ public class LevelManager : MonoBehaviour
     [SerializeField] private GameObject prefabBigFly;
     [SerializeField] private GameObject prefabFruitFly;
     private const float maxFlyMultiplier = 1.3f; // multiplier because it affects the formula (which is constant)
-    private int maxFlies = 2; 
-    private int currNumFlies = 0;
+    
+    [SerializeField] private int currNumFlies = 0;
+    
+    [Header("Level Difficulty")]
+    [SerializeField] private int maxFlies = 15; 
+    
+    [SerializeField] private float spawnInterval = 1f;
 
 
     // FADE TO BLACK
@@ -134,7 +139,7 @@ public class LevelManager : MonoBehaviour
             bool isLeft = (chance < 0.5f) ? true : false;
             Spawn(isLeft);
 
-            yield return new WaitForSeconds(Random.Range(0, 3));
+            yield return new WaitForSeconds(Random.Range(0, spawnInterval));
         }
     }
 
