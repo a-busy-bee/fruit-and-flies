@@ -29,7 +29,7 @@ public class LevelManager : MonoBehaviour
     [SerializeField] private GameObject blackbkg;
     [SerializeField] private Animator fadeToBlack;
     private float currVelocity;
-    bool levelDone = false;
+    bool levelRunning = false;
 
     private void Awake()
     {
@@ -96,7 +96,7 @@ public class LevelManager : MonoBehaviour
 
     public void Spawn(bool isLeft)
     {
-        if (levelDone) return;
+        if (levelRunning) return;
         float chance = Random.Range(0.0f, 1.0f);
         Transform spawnTarget = isLeft ? spawnLeft : spawnRight; // (condition) ? if true : if false
         GameObject prefab = (chance < 0.35f) ? prefabBigFly : prefabFruitFly;
@@ -117,7 +117,7 @@ public class LevelManager : MonoBehaviour
 
     private IEnumerator IncreaseMaxFlies()
     {
-        while (!levelDone)
+        while (!levelRunning)
         {
             yield return new WaitForSeconds(10);
 
@@ -178,7 +178,7 @@ public class LevelManager : MonoBehaviour
     IEnumerator FtbCoroutine(bool isLose)
     {
         fadeToBlack.SetTrigger("Close");
-        levelDone = true;
+        levelRunning = true;
         yield return new WaitForSeconds(3f);
         if (isLose) 
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
