@@ -161,4 +161,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Mold
   moldAnimator: {fileID: 7288569833516080059}
-  debugForceEnableMold: 1
+  debugForceEnableMold: 0
