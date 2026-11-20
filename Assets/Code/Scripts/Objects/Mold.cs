@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class Mold : MonoBehaviour
@@ -7,19 +8,27 @@ public class Mold : MonoBehaviour
 
     private void Start()
     {
-        if (debugForceEnableMold)
+        if (moldAnimator == null)
         {
-            moldAnimator.enabled = true;
+            Debug.Log("no mold animator");
+            return;
         }
-        else
-        {
-            moldAnimator.enabled = false;
-        }
+        moldAnimator.enabled = true;
     }
 
     public void GrowMold()
     {
-        moldAnimator.enabled = true;
-        moldAnimator.Play("Grow");
+        if (moldAnimator == null)
+        {
+            Debug.Log("no mold animator");
+            return;
+        }
+        StartCoroutine(WaitRandomThenGrow());
+    }
+
+    IEnumerator WaitRandomThenGrow()
+    {
+        yield return new WaitForSeconds(Random.Range(0f, 3f));
+        moldAnimator.SetTrigger("Sprout");
     }
 }
