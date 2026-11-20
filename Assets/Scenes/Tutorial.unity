@@ -42717,9 +42717,7 @@ MonoBehaviour:
   prefabBigFly: {fileID: 2952259769455102329, guid: af23b5bb0183049f4b556a558023d823, type: 3}
   prefabFruitFly: {fileID: 2952259769455102329, guid: fd5f23f18f33a4678aefd6f83656ef4f, type: 3}
   currNumFlies: 0
-  maxFlies: 5
-  spawnInterval: 1
-  fadeToBlack: {fileID: 0}
+  fadeToBlack: {fileID: 2019543086}
   fadetoBlack: {fileID: 0}
   pauseScreen: {fileID: 1275545281}
 --- !u!4 &1803404403
