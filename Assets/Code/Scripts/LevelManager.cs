@@ -26,7 +26,6 @@ public class LevelManager : MonoBehaviour
 
 
     // FADE TO BLACK
-    [SerializeField] private GameObject blackbkg;
     [SerializeField] private Animator fadeToBlack;
     private float currVelocity;
     bool levelRunning = false;

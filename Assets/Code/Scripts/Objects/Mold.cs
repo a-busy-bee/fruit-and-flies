@@ -8,11 +8,21 @@ public class Mold : MonoBehaviour
 
     private void Start()
     {
+        if (moldAnimator == null)
+        {
+            Debug.Log("no mold animator");
+            return;
+        }
         moldAnimator.enabled = true;
     }
 
     public void GrowMold()
     {
+        if (moldAnimator == null)
+        {
+            Debug.Log("no mold animator");
+            return;
+        }
         StartCoroutine(WaitRandomThenGrow());
     }
 
