@@ -1,23 +1,36 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class LevelManager : MonoBehaviour
 {
     public static LevelManager instance { get; private set; }
+    [SerializeField] private const float LOSE_THRESHOLD = 0.3f;
     [SerializeField] private GameObject[] objects;
-
+    private List<Object_Manager_Rottable> rottableObjects = new List<Object_Manager_Rottable>();
     private List<Vector3> currTargets; 
+    private float globalRotState = 0f;
+    private float globalMaxHealth = 0f;
+    private float globalCurrHealth = 0f;
+    
 
-    public GameObject GetRandomObject()
-    {
-        return objects[Random.Range(0, objects.Length)];
-    }
+    // SPAWNING FLIES
+    [SerializeField] private Transform spawnLeft;
+    [SerializeField] private Transform spawnRight;
+    [SerializeField] private GameObject prefabBigFly;
+    [SerializeField] private GameObject prefabFruitFly;
+    private const float maxFlyMultiplier = 1.3f; // multiplier because it affects the formula (which is constant)
+    private int maxFlies = 2; 
+    private int currNumFlies = 0;
 
-    public Vector3 GetRandomPointInAir()
-    {
-        return new Vector3(Random.Range(-20, 20), Random.Range(0, 10), 0);
-    }
+
+    // FADE TO BLACK
+    [SerializeField] private GameObject blackbkg;
+    [SerializeField] private CanvasGroup fadeToBlack;
+    private float currVelocity;
+    bool fading = false;
+    bool lose = false;
 
     private void Awake()
     {
@@ -34,9 +47,8 @@ public class LevelManager : MonoBehaviour
 
     private void Start()
     {
-        Debug.Log("start");
+        // MUSIC
         string sceneName = SceneManager.GetActiveScene().name;
-        Debug.Log(sceneName);
 
         AudioManager.MusicType theme = AudioManager.MusicType.baseTheme;
 
@@ -58,5 +70,129 @@ public class LevelManager : MonoBehaviour
 
         AudioManager.instance.SwitchTheme(theme);
 
+        // LEVEL STATE
+        foreach (GameObject obj in objects)
+        {
+            if (obj.TryGetComponent<Object_Manager_Rottable>(out Object_Manager_Rottable rotObj))
+            {
+                rottableObjects.Add(rotObj);
+                globalMaxHealth += rotObj.GetMaxHealth();
+            }
+        }
+
+        globalRotState = 0f;
+        globalCurrHealth = globalMaxHealth;
+
+        // SPAWNING
+        // spawn first batch from the right
+        while (currNumFlies < maxFlies)
+        {
+            Spawn(false);
+        }
+
+        StartCoroutine(IncreaseMaxFlies());
     }
+
+    #region SPAWNING FLIES 
+
+    public void Spawn(bool isLeft)
+    {
+        float chance = Random.Range(0.0f, 1.0f);
+        Transform spawnTarget = isLeft ? spawnLeft : spawnRight; // (condition) ? if true : if false
+        GameObject prefab = (chance < 0.35f) ? prefabBigFly : prefabFruitFly;
+
+        Instantiate(prefab, spawnTarget);
+        currNumFlies++;
+    }
+
+    public void KillFly()
+    {
+        currNumFlies--;
+
+        if (currNumFlies <= 0.5f * maxFlies)
+        {
+            StartCoroutine(SpawnFlies());
+        }
+    }
+
+    private IEnumerator IncreaseMaxFlies()
+    {
+        while (!fading)
+        {
+            yield return new WaitForSeconds(10);
+
+            maxFlies = (int)(maxFlies * maxFlyMultiplier);
+
+            SpawnFlies();
+        }
+    }
+
+    private IEnumerator SpawnFlies()
+    {
+        while (currNumFlies < maxFlies)
+        {
+            float chance = Random.Range(0.0f, 1.0f);
+            bool isLeft = (chance < 0.5f) ? true : false;
+            Spawn(isLeft);
+
+            yield return new WaitForSeconds(Random.Range(0, 3));
+        }
+    }
+
+
+    #endregion
+
+    #region OBJECTS
+    public GameObject GetRandomObject()
+    {
+        return objects[Random.Range(0, objects.Length)];
+    }
+
+    public Vector3 GetRandomPointInAir()
+    {
+        return new Vector3(Random.Range(-20, 20), Random.Range(0, 10), 0);
+    }
+
+    public void ReportNewRot(float damage)
+    {
+        globalCurrHealth -= damage;
+
+        globalRotState = globalCurrHealth / globalMaxHealth;
+
+        if (globalRotState <= LOSE_THRESHOLD)
+        {
+            FadeToBlack(true);
+        }
+    }
+
+    #endregion
+
+
+    #region FADE TO BLACK
+
+    public void FadeToBlack(bool isLose)
+    {
+        fading = true;
+        lose = isLose;
+    }
+
+    private void Update()
+    {
+        if (fading)
+        {
+            fadeToBlack.alpha = Mathf.SmoothDamp(fadeToBlack.alpha, 1, ref currVelocity, 0.75f);
+
+            if ((1 - fadeToBlack.alpha) < 0.0001f)
+            {
+                fading = false;
+
+                if (lose) 
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                else 
+                    SceneManager.LoadScene("Menu");
+            }
+        }
+    }
+
+    #endregion
 }
