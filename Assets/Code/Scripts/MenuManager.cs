@@ -10,27 +10,74 @@ public class MenuManager : MonoBehaviour
 
     [SerializeField] private GameObject[] levelButtons;
 
+    [SerializeField] private GameObject blackbkg;
+    [SerializeField] private CanvasGroup fadeToBlack;
+    private float currVelocity;
+    bool fading = false;
+    bool transitioningToLevel = false;
 
     private void Start()
     {
-        foreach (GameObject button in levelButtons)
-        {
-            button.SetActive(false);
-        }
+        // TODO: UNCOMMENT FOR RELEASSE?
+        // foreach (GameObject button in levelButtons)
+        // {
+        //     button.SetActive(false);
+        // }
 
-        int prevLevel = PlayerPrefs.GetInt("PrevLevel");
-        int currLevel = PlayerPrefs.GetInt("CurrLevel");
-
-        if (prevLevel < currLevel || currLevel == 0)
-        {
-            // play calendar page flip anim
-            levelPageAnimator.SetTrigger("Flip");
-
-            // reveal button
-            levelButtons[currLevel].SetActive(true);
-        }
+        StartCoroutine(WaitToFlip());
 
         AudioManager.instance.SwitchTheme(AudioManager.MusicType.baseTheme);
+    }
+    
+    private void Update()
+    {
+        if (fading)
+        {
+            if (transitioningToLevel)
+            {
+                fadeToBlack.alpha = Mathf.SmoothDamp(fadeToBlack.alpha, 1, ref currVelocity, 0.75f);
+
+                if ((1 - fadeToBlack.alpha) < 0.0001f)
+                {
+                    fading = false;
+                }
+            }
+            else
+            {
+                fadeToBlack.alpha = Mathf.SmoothDamp(fadeToBlack.alpha, 0, ref currVelocity, 1.5f);
+
+                if (fadeToBlack.alpha < 0.0001f)
+                {
+                    fading = false;
+                    transitioningToLevel = true;
+                }
+            }
+            
+        }
+    }
+
+    private IEnumerator WaitToFlip()
+    {
+
+        fading = true;
+        transitioningToLevel = false;
+        fadeToBlack.alpha = 1;
+
+        yield return new WaitForSeconds(1);
+
+
+        // TODO: UNCOMMENT FOR RELEASSE?
+        // int prevLevel = PlayerPrefs.GetInt("PrevLevel");
+        // int currLevel = PlayerPrefs.GetInt("CurrLevel");
+
+        // if (prevLevel < currLevel || currLevel == 0)
+        // {
+        //     // play calendar page flip anim
+        //     levelPageAnimator.SetTrigger("Flip");
+
+        //     // reveal button
+        //     levelButtons[currLevel].SetActive(true);
+        // }
     }
 
     public void OnStart()
@@ -64,7 +111,7 @@ public class MenuManager : MonoBehaviour
 
     public void LoadBargaining()
     {
-        SceneManager.LoadScene("Bargaining");
+        SceneManager.LoadScene("Breakfast");
     }
 
     public void LoadDepression()

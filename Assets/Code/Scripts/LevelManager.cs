@@ -2,6 +2,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
+using UnityEngine.InputSystem;
+using System.Security.Cryptography;
+using NUnit.Framework;
 
 public class LevelManager : MonoBehaviour
 {
@@ -34,6 +37,10 @@ public class LevelManager : MonoBehaviour
     private int currScene;
     private int nextScene;
 
+    // PAUSE
+    [SerializeField] private GameObject pauseScreen;
+    private bool isPaused; 
+
     private void Awake()
     {
         if (instance != null && instance != this)
@@ -49,6 +56,8 @@ public class LevelManager : MonoBehaviour
 
     private void Start()
     {
+        pauseScreen.SetActive(false);
+
         // MUSIC
         string sceneName = SceneManager.GetActiveScene().name;
 
@@ -119,7 +128,7 @@ public class LevelManager : MonoBehaviour
     {
         currNumFlies--;
 
-        if (currNumFlies <= 0.5f * maxFlies)
+        if (currNumFlies <= maxFlies)
         {
             StartCoroutine(SpawnFlies());
         }
@@ -132,6 +141,7 @@ public class LevelManager : MonoBehaviour
             yield return new WaitForSeconds(10);
 
             maxFlies = (int)(maxFlies * maxFlyMultiplier);
+            Debug.Log("maxFlies : " + maxFlies);
 
             SpawnFlies();
         }
@@ -208,6 +218,48 @@ public class LevelManager : MonoBehaviour
                     SceneManager.LoadScene("Menu");
             }
         }
+
+        if (Keyboard.current.escapeKey.wasPressedThisFrame)
+        {
+            if (isPaused)
+            {
+                isPaused = false;
+                pauseScreen.SetActive(false);
+                AudioListener.pause = false;
+
+                Time.timeScale = 1f;
+            }
+            else
+            {
+                isPaused = true;
+                pauseScreen.SetActive(true);
+                AudioListener.pause = true;
+
+                Time.timeScale = 0f;
+            }
+            
+        }
+    }
+
+    public void BackToMenu()
+    {
+        // hardcoded roundabout wait of quitting ot menu
+        // bad bad bad don't do this
+        Time.timeScale = 1f;
+        pauseScreen.SetActive(false);
+        AudioListener.pause = false;
+
+        fading = true;
+        lose = false;
+    }
+
+    public void Unpause()
+    {
+        Time.timeScale = 1f;
+        AudioListener.pause = false;
+
+        isPaused = false;
+        pauseScreen.SetActive(false);
     }
 
     #endregion
