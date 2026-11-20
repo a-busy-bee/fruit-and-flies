@@ -24,22 +24,19 @@ public class LevelManager : MonoBehaviour
     [SerializeField] private GameObject prefabBigFly;
     [SerializeField] private GameObject prefabFruitFly;
     private const float maxFlyMultiplier = 1.3f; // multiplier because it affects the formula (which is constant)
-    private int maxFlies = 2; 
-    private int currNumFlies = 0;
+    
+    [SerializeField] private int currNumFlies = 0;
+    
+    [Header("Level Difficulty")]
+    [SerializeField] private int maxFlies = 15; 
+    
+    [SerializeField] private float spawnInterval = 1f;
 
 
     // FADE TO BLACK
-    [SerializeField] private GameObject blackbkg;
-    [SerializeField] private CanvasGroup fadeToBlack;
+    [SerializeField] private Animator fadeToBlack;
     private float currVelocity;
-    bool fading = false;
-    bool lose = false;
-    private int currScene;
-    private int nextScene;
-
-    // PAUSE
-    [SerializeField] private GameObject pauseScreen;
-    private bool isPaused; 
+    bool levelRunning = false;
 
     private void Awake()
     {
@@ -116,6 +113,7 @@ public class LevelManager : MonoBehaviour
 
     public void Spawn(bool isLeft)
     {
+        if (levelRunning) return;
         float chance = Random.Range(0.0f, 1.0f);
         Transform spawnTarget = isLeft ? spawnLeft : spawnRight; // (condition) ? if true : if false
         GameObject prefab = (chance < 0.35f) ? prefabBigFly : prefabFruitFly;
@@ -136,7 +134,7 @@ public class LevelManager : MonoBehaviour
 
     private IEnumerator IncreaseMaxFlies()
     {
-        while (!fading)
+        while (!levelRunning)
         {
             yield return new WaitForSeconds(10);
 
@@ -155,7 +153,7 @@ public class LevelManager : MonoBehaviour
             bool isLeft = (chance < 0.5f) ? true : false;
             Spawn(isLeft);
 
-            yield return new WaitForSeconds(Random.Range(0, 3));
+            yield return new WaitForSeconds(Random.Range(0, spawnInterval));
         }
     }
 
@@ -192,79 +190,18 @@ public class LevelManager : MonoBehaviour
 
     public void FadeToBlack(bool isLose)
     {
-        fading = true;
-        lose = isLose;
-
-        if (!isLose)
-        {
-            PlayerPrefs.SetInt("PrevLevel", currScene);
-            PlayerPrefs.SetInt("CurrLevel", nextScene);
-        }
+        StartCoroutine(FtbCoroutine(isLose));
     }
 
-    private void Update()
+    IEnumerator FtbCoroutine(bool isLose)
     {
-        if (fading)
-        {
-            fadeToBlack.alpha = Mathf.SmoothDamp(fadeToBlack.alpha, 1, ref currVelocity, 0.75f);
-
-            if ((1 - fadeToBlack.alpha) < 0.0001f)
-            {
-                fading = false;
-
-                if (lose) 
-                    SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-                else
-                {
-                    AudioManager.instance.SwitchTheme(AudioManager.MusicType.baseTheme);
-                    SceneManager.LoadScene("Menu");
-                }
-
-                    
-            }
-        }
-
-        if (Keyboard.current.escapeKey.wasPressedThisFrame)
-        {
-            if (isPaused)
-            {
-                isPaused = false;
-                pauseScreen.SetActive(false);
-                AudioListener.pause = false;
-
-                Time.timeScale = 1f;
-            }
-            else
-            {
-                isPaused = true;
-                pauseScreen.SetActive(true);
-                AudioListener.pause = true;
-
-                Time.timeScale = 0f;
-            }
-            
-        }
-    }
-
-    public void BackToMenu()
-    {
-        // hardcoded roundabout wait of quitting ot menu
-        // bad bad bad don't do this
-        Time.timeScale = 1f;
-        pauseScreen.SetActive(false);
-        AudioListener.pause = false;
-
-        fading = true;
-        lose = false;
-    }
-
-    public void Unpause()
-    {
-        Time.timeScale = 1f;
-        AudioListener.pause = false;
-
-        isPaused = false;
-        pauseScreen.SetActive(false);
+        fadeToBlack.SetTrigger("Close");
+        levelRunning = true;
+        yield return new WaitForSeconds(3f);
+        if (isLose) 
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        else 
+            SceneManager.LoadScene("Menu");
     }
 
     #endregion
