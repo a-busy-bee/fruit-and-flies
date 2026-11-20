@@ -214,8 +214,13 @@ public class LevelManager : MonoBehaviour
 
                 if (lose) 
                     SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-                else 
+                else
+                {
+                    AudioManager.instance.SwitchTheme(AudioManager.MusicType.baseTheme);
                     SceneManager.LoadScene("Menu");
+                }
+
+                    
             }
         }
 

@@ -23618,7 +23618,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1803404402}
         m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
         m_MethodName: BackToMenu
         m_Mode: 1
@@ -45253,7 +45253,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1803404402}
         m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
         m_MethodName: Unpause
         m_Mode: 1

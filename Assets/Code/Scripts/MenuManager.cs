@@ -65,7 +65,6 @@ public class MenuManager : MonoBehaviour
 
         yield return new WaitForSeconds(1);
 
-
         // TODO: UNCOMMENT FOR RELEASSE?
         // int prevLevel = PlayerPrefs.GetInt("PrevLevel");
         // int currLevel = PlayerPrefs.GetInt("CurrLevel");
