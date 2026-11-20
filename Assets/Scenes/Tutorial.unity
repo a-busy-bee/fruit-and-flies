@@ -186,6 +186,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: bigFly (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 2952259769455102329, guid: af23b5bb0183049f4b556a558023d823, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3686950817668564157, guid: af23b5bb0183049f4b556a558023d823, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.7331958
@@ -306,6 +310,10 @@ PrefabInstance:
     - target: {fileID: 2952259769455102329, guid: af23b5bb0183049f4b556a558023d823, type: 3}
       propertyPath: m_Name
       value: bigFly (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2952259769455102329, guid: af23b5bb0183049f4b556a558023d823, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3686950817668564157, guid: af23b5bb0183049f4b556a558023d823, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2598,6 +2606,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: bigFly (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 2952259769455102329, guid: af23b5bb0183049f4b556a558023d823, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3686950817668564157, guid: af23b5bb0183049f4b556a558023d823, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.7331958
@@ -2892,6 +2904,10 @@ PrefabInstance:
     - target: {fileID: 2952259769455102329, guid: af23b5bb0183049f4b556a558023d823, type: 3}
       propertyPath: m_Name
       value: bigFly (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2952259769455102329, guid: af23b5bb0183049f4b556a558023d823, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3686950817668564157, guid: af23b5bb0183049f4b556a558023d823, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3355,6 +3371,10 @@ PrefabInstance:
     - target: {fileID: 2952259769455102329, guid: af23b5bb0183049f4b556a558023d823, type: 3}
       propertyPath: m_Name
       value: bigFly
+      objectReference: {fileID: 0}
+    - target: {fileID: 2952259769455102329, guid: af23b5bb0183049f4b556a558023d823, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3686950817668564157, guid: af23b5bb0183049f4b556a558023d823, type: 3}
       propertyPath: m_LocalRotation.w
@@ -6647,6 +6667,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: bigFly (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 2952259769455102329, guid: af23b5bb0183049f4b556a558023d823, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3686950817668564157, guid: af23b5bb0183049f4b556a558023d823, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.7331958
@@ -7122,6 +7146,10 @@ PrefabInstance:
     - target: {fileID: 2952259769455102329, guid: af23b5bb0183049f4b556a558023d823, type: 3}
       propertyPath: m_Name
       value: bigFly (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2952259769455102329, guid: af23b5bb0183049f4b556a558023d823, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3686950817668564157, guid: af23b5bb0183049f4b556a558023d823, type: 3}
       propertyPath: m_LocalRotation.w
@@ -11827,6 +11855,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: bigFly (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2952259769455102329, guid: af23b5bb0183049f4b556a558023d823, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3686950817668564157, guid: af23b5bb0183049f4b556a558023d823, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.7331958
@@ -12076,6 +12108,10 @@ PrefabInstance:
     - target: {fileID: 2952259769455102329, guid: af23b5bb0183049f4b556a558023d823, type: 3}
       propertyPath: m_Name
       value: bigFly (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2952259769455102329, guid: af23b5bb0183049f4b556a558023d823, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3686950817668564157, guid: af23b5bb0183049f4b556a558023d823, type: 3}
       propertyPath: m_LocalRotation.w
@@ -18497,6 +18533,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: bigFly (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 2952259769455102329, guid: af23b5bb0183049f4b556a558023d823, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3686950817668564157, guid: af23b5bb0183049f4b556a558023d823, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.7331958
@@ -23734,6 +23774,10 @@ PrefabInstance:
     - target: {fileID: 2952259769455102329, guid: af23b5bb0183049f4b556a558023d823, type: 3}
       propertyPath: m_Name
       value: bigFly (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2952259769455102329, guid: af23b5bb0183049f4b556a558023d823, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3686950817668564157, guid: af23b5bb0183049f4b556a558023d823, type: 3}
       propertyPath: m_LocalRotation.w
@@ -44039,6 +44083,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: bigFly (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 2952259769455102329, guid: af23b5bb0183049f4b556a558023d823, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3686950817668564157, guid: af23b5bb0183049f4b556a558023d823, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.7331958
@@ -46320,6 +46368,10 @@ PrefabInstance:
     - target: {fileID: 2952259769455102329, guid: af23b5bb0183049f4b556a558023d823, type: 3}
       propertyPath: m_Name
       value: bigFly (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2952259769455102329, guid: af23b5bb0183049f4b556a558023d823, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3686950817668564157, guid: af23b5bb0183049f4b556a558023d823, type: 3}
       propertyPath: m_LocalRotation.w
